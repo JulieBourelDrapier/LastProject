@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'zeyada', 'inclusive sans', sans-serif;
+  font-family:'righteous', 'inclusive sans', sans-serif;
 }
 body
 {
-color: #fff;
+color: #156062;
 }
 .header
 {
@@ -15,7 +15,7 @@ color: #fff;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 30px 10%;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -24,9 +24,10 @@ color: #fff;
 }
 .logo{
   position: relative;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  color: #fff;
+  color: #f8de65;
+  letter-spacing: 3px;
   text-decoration: none;
   cursor: default;
   opacity: 0;
@@ -35,7 +36,7 @@ color: #fff;
 .navbar a{
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: #156062;
   text-decoration: none;
   font-weight: 700;
   margin-left: 35px;
@@ -45,14 +46,14 @@ color: #fff;
   animation-delay:  calc(.2s * var(--1));
 }
 .navbar a:hover{
-  color: #0ef;
+  color: #00c092;
 }
 .home{
   position: relative;
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background-color: black;
+  background-color:#fff;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -63,8 +64,8 @@ color: #fff;
   max-width: 600px;
 }
 .home-content h1 {
-  font-family: 'kalam', sans-serif;
-  font-size: 48px;
+  font-family: 'rock salt', sans-serif;
+  font-size: 35px;
   font-weight: 700;
   margin: -3px 0;
   opacity: 0;
@@ -84,14 +85,13 @@ color: #fff;
   animation-delay: .7s;
 }
 .home-content h3 span {
-  color: #0ef;
+  color: #00c092;
 }
 .home-content p{
   font-size: 20px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
-  
 }
 .home-sci a {
   display: inline-flex;
@@ -100,11 +100,11 @@ color: #fff;
   width: 40px;
   height: 40px;
   background: transparent;
-  border: 2px solid #0ef;
+  border: 1px solid #156062;
   border-radius: 50%;
   margin: 30px 15px 30px 0;
   font-size: 20px;
-  color: #0ef;
+  color: #156062;
   text-decoration: none;
   transition: .5s ease;
   opacity: 0;
@@ -112,17 +112,18 @@ color: #fff;
   animation-delay: calc (.2s * var(--1));
 }
 .home-sci a:hover{
-  background: #0ef;
-  color: #081b29;
-  box-shadow: 0 0 20px #0ef;
+  background: #00c092;
+  color: #fff;
+  box-shadow: 0 0 20px #00c092;
+  border: none;
 }
 .btn-box{
   display: inline-block;
-  padding: 15px 30px;
-  background: #0ef;
+  /* padding: 15px 30px; */
+  background: #f8de65;
   border-radius: 40px;
   font-size: 16px;
-  color: #081b29;
+  color: #156062;
   letter-spacing: 1px;
   text-decoration: none;
   font-family: 'kalam', 'inclusive sans', sans-serif;
@@ -130,14 +131,40 @@ color: #fff;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef,
-  0 0 25px #0ef, 0 0 50px #0ef;
+
 }
-.btn-box:hover{
+.animated-link{
+  display: inline-block;
+  background: #156062;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.animated-link span{
+  display: inline-block; 
+  background: #156062;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 
+  transform 0.15s ease-out,
+  color 0.15s ease-out,
+  background-color 0.15s ease-out;
+}
+.animated-link:hover span{
+  transform: translate(-10px, -10px);
+  color: #fff;
+  background-color: #ffbbab;
+  border: none;
+}
+/* .btn-box:hover{
   box-shadow: 0 0 5px cyan,
   0 0 25px cyan, 0 0 50px cyan,
   0 0 200px cyan, 0 0 250px cyan;
-}
+} */
 
 @keyframes slideRight{
   0%{
@@ -179,3 +206,64 @@ color: #fff;
     opacity: 1;
   }
 }
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.about-img img{
+  padding-top: 10%;
+  padding-bottom: 20%;
+  max-width: 630px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+  margin-left: 60px;
+}
+.about-text{
+  margin-right: 60px;
+  background-color: #156062;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+}
+.about-text h2{
+  font-size: 32px;
+  font-family: 'rock salt', sans-serif;
+  align-items: center;
+}
+.about-text h2 span{
+  color: #f8de65;
+  font-family: 'rock salt', sans-serif;
+}
+.about-text h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px 0 5px;
+}
+.about-text p{
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.languages{
+  background-color: #fff;
+  border-radius: 8px;
+}
+.languages h4{
+  color: #00c092;
+  padding: 10px;
+}
+.languages i{
+  color: #00c092;
+  font-size: 50px;
+  padding: 10px;
+}
+strong{
+  font-weight: normal;
+}
+
+
+
