@@ -20,45 +20,49 @@
 
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <a href="#" class="logo">Portfolio</a>
     <nav class="navbar">
-      <a href="#" style="--1:1">Page d'accueil</a> 
+      <a href="#home" style="--1:1">Accueil</a> 
       <a href="#about" style="--1:2">À propos</a>
-      <a href="#project" style="--1:3">Projets choisis</a>
+      <a href="#project" style="--1:3">Projets</a>
       <a href="#contact" style="--1:4">Contact</a>
     </nav>
   </header>
   <section class="home">
     <div class="home-content">
-      <h3>Bienvenue !</h3>
-      <h1>Je m'appelle Julie Bourel</h1> 
-      <h3> Je suis <span class="text"></span></h3>
-      <p> En pleine reconversion professionnelle,
+      <h1>Bienvenue !</h1>
+      <h2>Je m'appelle Julie Bourel</h2> 
+      <h3>Je suis <span class="text"></span></h3>
+      <p>Suite à une reconversion professionnelle,
         <br> je me lance dans le développement web</p>
-    <div class="home-sci">
-      <a href="#" style="--1:5"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" style="--1:6"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#" style="--1:7"><i class="fa-brands fa-github"></i></a>
-    </div>
-      <a href="#" class="animated-link btn-box"><span>Raccourci</span></a>
+      <ul class="home-sci">
+        <a href="#" style="--1:6"><li><i class="fa-brands fa-instagram"></i></li></a>
+        <a href="#" style="--1:7"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+        <a href="#" style="--1:8"><li><i class="fa-brands fa-github"></i></li></a>
+      </ul>
+      <div class="short-cut-btn">
+        <a href="#project" class="animated-link"><span>Raccourci</span></a>
+      </div>
     </div>
 </section>
 
 <section class="about" id="about">
-  <div class="about-img">
+
+  <div class="about-section">
     <img src="./assets/home.webp" alt="desk with devtools">
   </div>
-  <div class="about-text">
-    <h2>À propos de <span>Moi</span></h2>
-    <h4>Reconversion professionnelle</h4>
-      <p>J'ai décidé de me lancer dans l'univers du web et plus particulirement dans le <strong>développement front</strong>.</p>
-      <p>Après avoir découvert ce vaste monde de manière autodidacte je me suis rendue compte que j'avais besoin d'être accompagnée pour savoir par où commencer. C'est là qu'OpenCLassroom entre en jeu.</p>
-      <h4>Formation</h4>
-      <p>"Intégratrice web" proposée sur 9 mois du 15 janvier au 15 octobre 2023</p>
-
-    <article class="languages">
-      <h4>Langages de programmations et frameworks</h4>
+    <div class="about-text">
+      <h2>À propos de <span>Moi</span></h2>
+      <h3>Reconversion professionnelle</h3>
+        <p>J'ai décidé de me lancer dans <strong>l'univers du web</strong>.</p>
+        <p>J'avais besoin d'être guidée pour savoir par où commencer. 
+        <br>C'est là qu'<a href="https://openclassrooms.com.">OpenClassroom</a> entre en jeu.</p>
+      
+      <h3>Formation</h3>
+        <p>"Intégratrice web" proposée sur 9 mois du 15 janvier au 15 octobre 2023</p>
+    
+      <h3>Langages et frameworks</h3>
         <p> 
           <i class="fa-brands fa-html5"></i>
           <i class="fa-brands fa-css3-alt"></i>
@@ -66,33 +70,23 @@
           <i class="fa-brands fa-react"></i>
           <i class="fa-brands fa-sass"></i>
         </p>
-    </article>
-    
-    <h4>Compétences et savoirs-faire</h4>
-      <p>Gestion de projets</p>
-      <p>Présentations orales et supports de communication</p>
-      <p>Adaptabilité, créativité, gestion du stress</p>
-      <p>Versionning via GitHub</p>
-      <p>Travail en équipe et collaboration</p>
-  </div>
+   
+      <h3>Compétences et savoirs-faire</h3>
+        <p>Gestion de projets</p>
+        <p>Présentations orales et supports de communication</p>
+        <p>Adaptabilité, créativité, gestion du stress</p>
+        <p>Versionning via GitHub</p>
+        <p>Travail en équipe et collaboration</p>
+   
 </section>
 
 <section>
-  <div id="portfolio" id="project">
-    <div class="main-text" id="project">
+  <div class="portfolio" id="project">
+    <div class="main-text">
       <h2>Projets <span>choisis</span></h2>
       <div class="portfolio-content">
         <div class="row">
-          <img src="./assets/purple.webp" alt="purple">
-          <div class="layer">
-            <h5>description du projet choisi</h5>
-            <p></p>
-            <a href="#" class="bx bx-link-external"></a>
-          </div>
-      </div>
-      <div class="portfolio-content">
-        <div class="row">
-          <img src="./assets/purple.webp" alt="purple">
+          <img src="./assets/ninaCarducci.webp" alt="Capture du site de Nina Carducci, photographe">
           <div class="layer">
             <h5>description du projet choisi</h5>
             <p></p>
@@ -100,7 +94,7 @@
           </div>
       </div>  <div class="portfolio-content">
         <div class="row">
-          <img src="./assets/purple.webp" alt="purple">
+          <img src="./assets/SophieBluel.webp" alt="Capture du site de Sophie Bluel, architecte">
           <div class="layer">
             <h5>description du projet choisi</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis animi nostrum esse deserunt, officia architecto quia, magnam corrupti quidem culpa natus est exercitationem nisi, labore necessitatibus. Accusamus adipisci voluptas voluptate!</p>
