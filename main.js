@@ -1,5 +1,5 @@
 var typed = new Typed(".text",{
-  strings: [" ","développeuse front junior", "intégratrice web", "curieuse et motivée", "disponible dès lundi !"],
+  strings: [" ", "développeuse front-end", "intégratrice web", "junior et motivée"],
   typeSpeed: 50,
   backSpeed: 50,
   backDelay: 1800,
@@ -7,8 +7,6 @@ var typed = new Typed(".text",{
 })
 
 // carousel
-const delay = 4000; //ms
-
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
@@ -24,12 +22,6 @@ function changeSlide(next = true) {
 
   slides.style.left = current + "%";
 }
-
-let autoChange = setInterval(changeSlide, delay);
-const restart = function() {
-  clearInterval(autoChange);
-  autoChange = setInterval(changeSlide, delay);
-};
 
 // Controls
 document.querySelector(".next-slide").addEventListener("click", function() {
