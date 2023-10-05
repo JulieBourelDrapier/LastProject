@@ -174,37 +174,6 @@ margin: auto;
     transform: translate(-4px,-4px);
 }
 
-
-/* .animated-link{
-  display: inline-block;
-  background: #156062;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.animated-link span{
-  display: inline-block; 
-  background: #156062;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px;
-  font-size: 16px;
-  font-family: 'rock salt', sans-serif;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.15s ease-out,
-  color 0.15s ease-out,
-  background-color 0.15s ease-out;
-} */
-/* .animated-link:hover span{
-  transform: translate(5px, -6px);
-  position: static;
-  color: #fff;
-  background-color: #ffbbab;
-  font-family: 'rock salt', sans-serif;
-  border: none;
-} */
-
-
 @keyframes slideRight{
   0%{
     transform: translateX(-100px);
@@ -248,7 +217,6 @@ margin: auto;
 .about{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -258,7 +226,7 @@ margin: auto;
     justify-content: center;
     align-items: center; */
     
-  }
+}
 .about-section h2{
   color: #156062;
   font-size: 30px;
@@ -270,20 +238,14 @@ margin: auto;
   font-family: 'rock salt', sans-serif;
 }
 .about-section img{
-  padding-top: 10%;
-  padding-bottom: 20%;
-  max-width: 630px;
-  height: auto;
+  padding: 13%;
   width: 100%;
-  border-radius: 8px;
-  /* margin-left: 60px; */
+  margin: auto;
 }
 .about-text{
-  /*margin-left: 60px;*/
   background-color: #fff;
   color: #156062;
-  padding: 20px;
-  margin: 20px;
+  margin: auto;
 }
 .about-text h2{
   font-size: 30px;
@@ -310,13 +272,14 @@ margin: auto;
 }
 
 .main-text{
-  padding-top: 130px;
-  margin-top: 200px;
+  padding-top: 10%;
+  margin-top: 10%;
 }
 .main-text h2{
   font-size: 32px;
   line-height: 2;
   text-align: center;
+  margin: 30px;
 }
 .main-text h2 span{
   color: #f8de65;
@@ -335,14 +298,17 @@ margin: auto;
   cursor: pointer;
 }
 .row img{
-  width: 100%;
+  width: 60%;
   border-radius:8px;
   display: block;
   transition: transform 0.5s;
-  border: #f8de65 solid 17px;
+  border: #156062 solid 17px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 .layer{
-  width: 100%;
+  width: 30%;
+  margin: auto;
   height: 0;
   background: linear-gradient(rgba(0,0,0,0.9), #156062);
   position: absolute;
@@ -350,22 +316,19 @@ margin: auto;
   left: 0;
   bottom: 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   text-align: center;
   padding: 0 40px;
   transition: height 0.5s;
 }
-.layer h5{
-  color: #00c092;
+.layer h3{
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 .layer p{
-  color: #00c092;	
+  color: #fff;	
   font-size: 1rem;
   line-height: 1.5;
 }
