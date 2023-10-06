@@ -1,5 +1,5 @@
 var typed = new Typed(".text",{
-  strings: [" ", "développeuse intégratrice web", "curieuse et motivée", "disponible dès lundi !"],
+  strings: [" ", "développeuse front-end", "curieuse et motivée", "disponible dès lundi !"],
   typeSpeed: 50,
   backSpeed: 50,
   backDelay: 1800,
@@ -33,3 +33,10 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
+
+// //contact 
+// $('button').click(function(){
+//   $('button').toggleClass('active');
+//   $('.title').toggleClass('active');
+//   $('nav').toggleClass('active');
+// });
