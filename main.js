@@ -33,10 +33,3 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
-
-// //contact 
-// $('button').click(function(){
-//   $('button').toggleClass('active');
-//   $('.title').toggleClass('active');
-//   $('nav').toggleClass('active');
-// });
