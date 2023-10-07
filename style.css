@@ -93,12 +93,17 @@ a{
     font-size: 36px;
   }
 }
-.home-content h3, .home-content span{
+.home-content h3, .text{
   font-size: 18px;
   padding-bottom: 5px;
   @media screen and (min-width: 800px) {
     font-size: 35px;
   }
+}
+h2{
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 2s;
 }
 .home-content h2 {
   font-family: 'rock salt', sans-serif;
@@ -134,7 +139,7 @@ a{
     font-size: 20px;
   } 
 }
-.home li {
+.home-content li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +148,7 @@ a{
   background: transparent;
   border: 1.2px solid #156062;
   border-radius: 50%;
-  margin: 10px 15px 30px 0;
+  margin: 14px 3px 10px 0;
   transition: .2s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -155,68 +160,41 @@ a{
     margin: 30px 15px 30px 0;
   }    
 }
-.home-link a:hover{
+.home-content li:hover{
   background: #00c092;
-  color: #fff;
   box-shadow: 0 0 30px #00c092;
   border: none;
 }
-.btn-box{
-  display: inline-block;
-  padding: 16px;
-  background: #00c092;
-  border-radius: 40px;
-  font-size: 16px;
+.ul-link:hover{
   color: #fff;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-family: 'righteous', 'inclusive sans', sans-serif;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-  animation-delay: 2s;
 }
-.btn-box:hover{
-  background: #00c092;
-  box-shadow: 0 0 5px #00c092,
-  0 0 25px #00c092, 0 0 50px #00c092,
-  0 0 200px #00c092, 0 0 250px #00c092;
-}
-.short-cut-btn{
+.btn-div{
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
-  margin: -10px -6px;
+  margin-top: 10px;
 }
-.animated-link{
-  display: inline-block;
-  background-color: #156062;
+.project-btn{
+  padding: 8px;
+  background: #156062;
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 28px;
-  cursor: pointer;
-  flex-shrink: 0;
-  letter-spacing: 1px;
-  font-size: 15px;
-  transition: all .2s ease-out;
-}
-.animated-link span{
-  display: inline-block;
-  font-size: 12px;
-  padding: 8px 10px;
+  font-family: 'rock salt', sans-serif;
+  letter-spacing: 2px;
+  font-size: 10px;
+  border-radius: 20px;
   @media screen and (min-width: 800px) {
-    padding: 15px 23px;
-    font-family: 'rock salt', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
   }
 }
-.animated-link:hover {
-    box-shadow: 6px 6px 0 #ffbbab;
-    transform: translate(-2px,-2px);
-  @media screen and (min-width: 800px) {
-    transform: translate(-6px,-6px);
-  }
-}
+.project-btn:hover{
+  background: #fff;
+  color: #00c092;
+  border: 3px solid #00c092;
+  font-weight: bolder;
+  border-radius: 20px;
 
+}
+/* KEYFRAMES */
 @keyframes slideRight{
   0%{
     transform: translateX(-100px);
@@ -258,33 +236,29 @@ a{
   }
 }
 .about-me{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #fff;
-  margin-top: 40px;
-  /* @media screen and (min-width: 800px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    
-}
-.about-section h2{
-  color: #156062;
-  font-size: 30px;
-  font-family: 'rock salt', sans-serif;
-  align-items: center;
-}
-.about-section h2 span{
-  color: #f8de65;
-  font-family: 'rock salt', sans-serif;
-}
-.about-section img{
-  padding: 13%;
-  width: 100%;
+  width: 82%;
   margin: auto;
+  @media screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    margin-top: 40px;
+  }
+}
+.about-section{
+  margin: 15%;
+}
+.about-img{
+  display: none;
+  @media screen and (min-width: 800px) {
+    display: block;
+    padding: 13%;
+    width: 100%;
+    margin: auto;
+  }
 }
 .about-text{
   background-color: #fff;
@@ -292,9 +266,14 @@ a{
   margin: auto;
 }
 .about-text h2{
-  font-size: 30px;
+  text-align: center;
   font-family: 'rock salt', sans-serif;
+  color: #156062;
+  font-size: 20px;
   align-items: center;
+  @media screen and (min-width: 800px) {
+    font-size: 30px;
+  }
 }
 .about-text h2 span{
   color: #f8de65;
@@ -302,30 +281,51 @@ a{
 }
 .about-text h3{
   font-family: 'gruppo', 'inclusive sans', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px;
+  @media screen and (min-width: 800px) {
+    font-size: 24px;
+  }
 }
 .about-text p{
   font-family: 'gruppo', 'inclusive sans', sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1;
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+    line-height: 1.4;
+  } 
 }
-.languages{
+.link-OCR{
+  font-size: 13px;
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+  }
+}
+.lang, .about-text ul{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  @media screen and (min-width: 800px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
 }
-.languages i{
-  color: #00c092;
-  font-size: 40px;
-  padding: 10px 20px 10px 10px;
-}
-
 .about-text i{
   color: #00c092;
-  font-size: 40px;
-  padding: 10px 20px 10px 10px;
+  font-size: 18px;
+  @media screen and (min-width: 800px) {
+    font-size: 40px;
+    padding: 10px 20px 10px 10px;
+  }
 }
 .main-text{
   margin-top: 7%;
