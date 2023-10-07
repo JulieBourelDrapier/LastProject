@@ -169,9 +169,9 @@ h2{
   color: #fff;
 }
 .btn-div{
-  display: block;
+  display: none;
   @media screen and (min-width: 800px) {
-    display: flex;
+    display: inline-block;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
@@ -179,24 +179,28 @@ h2{
   }
 }
 .btn-div:hover{
-  color: #fff;
+  @media screen and (min-width: 800px) {
+    color: #fff;
+  }
 }
 .project-btn{
-  padding: 8px;
-  background: #00c092;
-  color: #fff;
-  font-family: 'rock salt', sans-serif;
-  letter-spacing: 2px;
-  font-size: 10px;
-  border-radius: 20px;
   @media screen and (min-width: 800px) {
     font-size: 14px;
+    display: inline-block;
+    padding: 8px;
+    background: #00c092;
+    color: #fff;
+    font-family: 'rock salt', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 20px;
   }
 }
 .project-btn:hover{
-  display: block;
-  background: #ffbbab;
-  color: #fff;
+  @media screen and (min-width: 800px) {
+    display: block;
+    background: #ffbbab;
+    color: #fff; 
+  }
 }
 /* KEYFRAMES */
 @keyframes slideRight{
@@ -398,11 +402,11 @@ figure {
   margin: auto;
 }
 figcaption {
-  font-size: 12px;
+  font-size: 18px;
   padding: 3px;
   text-align: center;
   font-style: italic;
-  font-family: 'rock salt', 'inclusive sans', sans-serif;
+  font-family: 'gruppo', 'inclusive sans', sans-serif;
 }
 .slides img {
 object-fit: contain;
