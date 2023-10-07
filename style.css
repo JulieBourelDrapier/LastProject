@@ -80,7 +80,7 @@ a{
   align-items: center;
   padding: 145px 10% 0;
   @media screen and (min-width: 800px) {
-    padding: 180px 10% 0; 
+    padding: 180px 10% 10%; 
   }
 }
 .home-content{
@@ -103,7 +103,7 @@ a{
 h2{
   opacity: 0;
   animation: slideRight 1s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 .home-content h2 {
   font-family: 'rock salt', sans-serif;
@@ -169,10 +169,14 @@ h2{
   color: #fff;
 }
 .btn-div{
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: 1s;
-  margin-top: 10px;
+  display: none;
+  @media screen and (min-width: 800px) {
+    display: flex;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    margin-top: 10px;  
+  }
 }
 .project-btn{
   padding: 8px;
@@ -235,6 +239,8 @@ h2{
     opacity: 1;
   }
 }
+
+/* ABOUT */
 .about-me{
   width: 82%;
   margin: auto;
@@ -254,8 +260,7 @@ h2{
 .about-img{
   display: none;
   @media screen and (min-width: 800px) {
-    display: block;
-    padding: 13%;
+    display: grid;
     width: 100%;
     margin: auto;
   }
@@ -303,7 +308,17 @@ h2{
     font-size: 18px;
   }
 }
-.lang, .about-text ul{
+.lang{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 800px) {
+  text-align: start;
+  }
+}
+.about-text ul{
   display: flex;
   flex-direction: row;
   padding-top: 6px;
@@ -314,42 +329,57 @@ h2{
   @media screen and (min-width: 800px) {
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
-    justify-content: center;
     gap: 15px;
+    text-align: start;
+    justify-content: flex-start;
   }
 }
 .about-text i{
   color: #00c092;
-  font-size: 18px;
+  font-size: 30px;
   @media screen and (min-width: 800px) {
     font-size: 40px;
     padding: 10px 20px 10px 10px;
   }
 }
+
+/* PROJECTS */
 .main-text{
   margin-top: 7%;
   margin-bottom: 15%;
 }
 .main-text h2{
-  font-size: 32px;
-  line-height: 2;
-  text-align: center;
-  margin: 30px;
   font-family: 'rock salt', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  @media screen and (min-width: 800px) {
+    font-size: 32px;
+    line-height: 2;
+    margin: 30px;
+  }
 }
 .carousel-container {
-  margin: 110px;/* 50px; */
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: 800px) {
+    justify-content: center;
+    align-items: center;
+    margin: 110px;/* 50px; */ 
+  }
 }
 .carousel {
   margin: auto;
-  width: 100%;
-  height: 560px;
+  width: 90%;
+  height: 332px;
   border-radius: 30px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.1);
-  /* border: 1px solid #156062; */
+  @media screen and (min-width: 800px) {
+    width: 100%;
+    height: 560px;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #156062; */
+  }
 }
 .slides {
   position: absolute;
@@ -369,39 +399,46 @@ figure {
   margin: auto;
 }
 figcaption {
-  font-size: 12px;
+  font-family: 'righteous', 'inclusive sans', sans-serif;
+  font-size: 10px;
   padding: 3px;
   text-align: center;
   font-style: italic;
-  font-family: 'rock salt', 'inclusive sans', sans-serif;
+  @media screen and (min-width: 800px) {
+    font-family: 'rock salt', 'inclusive sans', sans-serif;
+    font-size: 16px;
+  }
 }
 .slides img {
 object-fit: contain;
 }
 .controls {
-  /* opacity: 1;  */
   display: flex;
-  /* position: absolute; */
-  top: 50%;
-  left: 0;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
   z-index: 99999;
   transition: all ease 0.5s;
-  font-size: 55px;
+  font-size: 20px;
   color : #00c092;
+  @media screen and (min-width: 800px) {
+    width: 100%;
+    font-size: 55px;
+    top: 50%;
+    left: 0;
+  }
 }
 .control {
   position: relative;
-  margin: 264px 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* height: 40px;
-  width: 40px; */
+  margin: 40% 38%;
   opacity: .5;
   transition: ease .1s;
   cursor: pointer;
+  @media screen and (min-width: 800px) {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 264px 20px;
+  }
 }   
 .control:hover {
   opacity: 1;
