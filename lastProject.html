@@ -31,7 +31,7 @@
 
   <section class="home">
     <div class="home-content">
-      <h1>Bienvenue !</h1>
+      <!-- <h1>Bienvenue !</h1> -->
       <h2>Je m'appelle Julie Bourel</h2> 
       <h3>Je suis <span class="text"></span></h3>
       <p>Suite à une reconversion professionnelle,
@@ -52,13 +52,17 @@
       <img class="about-img" src="./assets/home.webp" alt="desk with devtools">
     </div>
     <div class="about-text">
-      <h2>À propos de <span>Moi</span></h2>
+      <h2>À propos de <span>moi</span></h2>
       <h3>Reconversion professionnelle</h3>
-        <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>       
+        <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>  
+        <p>En tant qu'Educatrice de terrain d'une part.</p>
+        <p>Puis en tant que responsable de structure.</p>     
         <p>Aujourd'hui, je fais le choix de me lancer dans <strong>l'univers du web</strong>.</p>   
       <h3>Formation</h3>
-        <p>J'ai suivi le parcours "<strong>Intégratrice web</strong>" proposé par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassroom</a> sur 9 mois :
+        <p>Délivrée par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassroom</a></p>
+        <p>Parcours "<strong>Intégratrice web</strong>"</p>
         <p>Du 15 janvier au 15 octobre 2023</p>
+        <p>Certification reconnue par l'État</p>
       <div class="lang">
       <h3>Langages et frameworks</h3>
         <ul> 
@@ -78,44 +82,46 @@
     </div>
   </section>
 
-  <section id="projects">
-      <div class="main-text">
+  <section id="projects" class="projects-section">
+
+      <article class="main-text">
         <h2>Projets</h2>
+
           <div class="carousel-container">
             <div class="carousel">
               <div class="slides">
                 <figure>
                   <img class="slide" src="./assets/ridingcities.webp" alt="Projet Riding Cities" >
-                  <figcaption>Avant - Après du site Riding cities</figcaption>
+                  <figcaption>"Avant/Après" du site Riding cities</figcaption>
                 </figure>
-              <figure>
-                <img class="slide" src="./assets/booki.webp" alt="Projet Booki" >
-                <figcaption>Découverte de flex avec le site Booki</figcaption>
-              </figure>
-              <figure>
-                <img class="slide" src="./assets/ohmyfood.webp" alt="Site de réservation de repas haut de gamme Oh my food" >
-                <figcaption>Présentation des menus sur le site Oh my food</figcaption>
-              </figure>
-              <figure>
-                <img class="slide" src="./assets/printit.webp" alt="Projet Print it " >
-                <figcaption>Carrousel du site Print It</figcaption>
-              </figure>
-              <figure>
-                <img class="slide" src="./assets/sophiebluel.webp" alt="Site pour Sophie Bluel" >
-                <figcaption>Page d'accueil du site de Sophie Bluel - Architecte</figcaption>
-              </figure>
-              <figure>
-                <img class="slide" src="./assets/kasa.webp" alt="Application de location immobilières Kasa" >
-                <figcaption>Application Kasa</figcaption>
-              </figure>
-              <figure>
-                <img class="slide" src="./assets/ninacarducci.webp" alt="Site de Nina Carducci" >
-                <figcaption>Page d'accueil du site de Nina Carducci - Photographe </figcaption>
-              </figure>
-            <figure>
-              <img class="slide" src="./assets/argentbank.webp" alt="Application bancaire Argent Bank" >
-              <figcaption>Page d'accueil du site Argent Bank</figcaption>
-            </figure>
+                <figure>
+                  <img class="slide" src="./assets/booki.webp" alt="Projet Booki" >
+                  <figcaption>Découverte de flex avec le site Booki</figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/ohmyfood.webp" alt="Site de réservation de repas haut de gamme Oh my food" >
+                  <figcaption>Présentation des menus sur le site Oh my food</figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/printit.webp" alt="Projet Print it " >
+                  <figcaption>Carrousel du site Print It</figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/sophiebluel.webp" alt="Site pour Sophie Bluel" >
+                  <figcaption>Page d'accueil du site de Sophie Bluel - Architecte</figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/kasa.webp" alt="Application de location immobilières Kasa" >
+                  <figcaption>Application Kasa</figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/ninacarducci.webp" alt="Site de Nina Carducci" >
+                  <figcaption>Page d'accueil du site de Nina Carducci - Photographe </figcaption>
+                </figure>
+                <figure>
+                  <img class="slide" src="./assets/argentbank.webp" alt="Application bancaire Argent Bank" >
+                  <figcaption>Page d'accueil du site Argent Bank</figcaption>
+                </figure>
               </div>
               <div class="controls">
                 <div class="control prev-slide"><i class="fa-solid fa-circle-chevron-left"></i></div>
@@ -123,71 +129,81 @@
               </div>
             </div>
           </div>
-      </div>  
+      </article>  
 
-      <div class="explanations">
+      <article class="explanations">
         <div class="retrospective">
           <h2>Rétrospective</h2>
           <h3>Projets choisis</h3>
-            <p>Les différents projets sur lesquels j'ai travaillé m'ont permis d'ancrer mes connaissances en HTML5 & CSS3.J'ai aussi découvert Javascript et React.</p>
-            <p>De manière transversale, la lecture de maquettes Figma, l'usage de GitHub et de Git et l'utilisation des devtools m'ont laissé entrevoir le quotidien d'un développeur.</p>
+            <p>Les différents projets sur lesquels j'ai travaillé m'ont amnené à développer mes connaissances en HTML5 & CSS3 et à découvrir Javascript et React.</p>
+            <p>Le fait de décrypter des maquettes, d'utiliser Git et GitHub ainsi que les devtools m'a permis d'entrevoir le quotidien d'un développeur et d'acquérir de bonnes pratiques.</p>
+            <p>L'accompagnement proposé par mon mentor et mes échanges avec la communauté de développeurs m'ont permis d'évoluer et d'apprendre</p>
+          <div class="github">
+            <p>Repository du site de Nina Carducci : <a class="github-link" href="https://github.com/JulieBourelDrapier/ninacarducci.github.io.git"><i class="fa-brands fa-github"></i></a></p>
+            <p>Repository de Kasa : <a class="github-link" href="https://github.com/JulieBourelDrapier/kasa.git"><i class="fa-brands fa-github"></i></a></p>
+          </div>
         </div>
-
         <div class="cards">
+          <img class="unrotate-arrow" src="./assets/arrow.png" alt="flèche" width="50px" height="50px">
           <div class="flip-card">
             <div class="flip-card-inner">           
               <div class="flip-card-front">
-                <h3>Nina Carducci</h3>
-                <p>Photographe</p>
-                <img src="./assets/ninacarducci.webp" alt="Mignature du site de Nina Carducci">
+                <h3>Mission Free Lance</h3>
+                <p>Au service de Nina Carducci</p>
+                <p>Photographe en quête de visibilité</p>
+                <img class="flip" src="./assets/" alt="Mignature du site de Nina Carducci">
               </div>
               <div class="flip-card-back">
                 <h3>Accessibilité & performance</h3>
-                <h4>Contexte</h4>
-                <p>En tant que développeuse free-lance je propose à Nina Carducci d'intervenir sur son site afin qu'elle gagne en visibilité et en performance tout en proposant un contenu plus accessible au moyen d'une syntaxte plus inclusive</p>
-                <p>Rapport Lighthouse, analyse via Wave, convertion des données en webp : j'utilise les outils à ma disposition pour mener à bien ma mission.</p>
-                <p>Mot-clés, création de liens pour favoriser la visibilité sur les réseaux, des moyens existent pour modernier le site de Nina Carducci</p>
+                <p>Mission en free-lance</p>
+                <p>Optimisation SEO du site one page</p>
+                <p>Adaptation de la syntaxte afin d'assurer l'accessibilité du site</p>
+                <p>Utilisation des rapports Lighthouse et Wave</p>
+                <p>Convertion des données en webp</p>
+                <p>Visibilité sur les réseaux</p>
               </div>
             </div>
-            <a class="github-link" href="https://github.com/JulieBourelDrapier/ninacarducci.github.io.git"><i class="fa-brands fa-github"></i></a>
-          </div> 
+          </div>
+
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <h3>Kasa</h3>
+                <h3>Mission en entreprise</h3>
+                <p>Visant la modernisation du site Kasa</p>
                 <p>Site de locations immobilières</p>
-                <img src="./assets/kasa-small.webp" alt="Miniature du site Kasa">
+                <img src="./assets/.webp" alt="Miniature du site Kasa">
               </div>
               <div class="flip-card-back">
                 <h3>Composants React</h3>
-                <h4>Contexte</h4>
-                <p>Rien de tel qu'un projet d'envergure pour mesurer la richesse de React et de ses composants. Je ne vous le cache pas, méthode et rigueur sont de mise pour maitriser cet outils certes complexe mais qui présente des prouesses remarquables</p>
-                <p>Ce projet demande une certaine capacité à observer, analyser et synthétiser les éléments qui composent les pages du site. </p>
+                <p>Modernisation de l'achitecture du site</p>
+                <p>Usage de React</p>
+                <p>Analyse des maquettes et définition des composants</p>
+                <p>Gestion de l'ensemble des pages du site</p>
               </div>
+            </div>
           </div>
-          <a class="github-link" href="https://github.com/JulieBourelDrapier/kasa.git"><i class="fa-brands fa-github"></i></a>
+          <img class="rotate-arrow" src="./assets/arrow.png" alt="flèche" width="50px" height="50px">
         </div>
-      </div> 
-  </section>
+      </article> 
+    </section>
 
-  <section id="contact">
-    <div class="contact-me">
-      <div class="contact-info">
-        <h2>Intéressé par mon profil ?</h2>
-        <h3>Contactez moi</h3>
-        <p>j.boureldrapier@gmail.com</p>
-        <p><i class="fa-brands fa-linkedin-in"></i> julie-bourel-drapier</p>
+      <section id="contact">
+        <div class="contact-me">
+          <div class="contact-info">
+            <h2>Intéressé par mon profil ?</h2>
+            <h3>Contactez moi</h3>
+            <p>j.boureldrapier@gmail.com</p>
+            <p><i class="fa-brands fa-linkedin-in"></i> julie-bourel-drapier</p>
+          </div>
+          <div class="arrow-up">
+            <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+          </div>
       </div>
-      <div class="arrow-up">
-        <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
-      </div>
-  </div>
-  </section>
-
-  <footer class="footer">
-    <p>Copyright © 2023 Julie Bourel</p>
-  </footer>
-
+      </section>
+    
+      <footer class="footer">
+        <p>Copyright © 2023 Julie Bourel</p>
+      </footer>
     <script src="https://kit.fontawesome.com/a595cf5885.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
