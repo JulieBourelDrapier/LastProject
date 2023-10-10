@@ -518,14 +518,18 @@ p{
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner  {
-  @media screen and (min-width: 800px) {
+@media (hover: hover) {
+  .flip-card:hover .flip-card-inner  {
+      transform: rotateY(180deg);
+    }
+}
+
+@media (hover: none) {
+  .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
   }
 }
-.flip-card:active .flip-card-inner {
-  transform: rotateY(180deg);
-}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
