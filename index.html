@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Gruppo&family=Montserrat:wght@100;400&family=Passion+One:wght@400;700&family=Righteous&family=Rock+Salt&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./splide-4.1.3/dist/css/themes/splide-sea-green.min.css">
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,193 +22,176 @@
       </nav>
     </header>
 
-
-    <section class="home">
-      <div class="home-content">
-        <h2>Je m'appelle Julie BD</h2> 
-        <h3>Je suis <span class="text"></span></h3>
-        <p>Suite à une reconversion professionnelle,
-          <br>je me lance dans le développement web</p>
-        <ul>
-          <li class="ul-link"><a href="https://github.com/JulieBourelDrapier" style="--1:6"><i class="fa-brands fa-github"></i></a></li>
-          <li class="ul-link"><a href="https://www.linkedin.com/in/julie-bourel-drapier/" style="--1:7"><i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li class="ul-link"><a href="#" style="--1:8"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-        <div class="btn-div">
-          <a class="project-btn" href="#projects">Projets</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about-me">
-      <h2 class="about-title">À propos de <span class="about-span">moi</span></h2>
-      <section class="about-img">
-        <img src="./assets/home.webp" alt="desk with devtools">
-      </section>
-      <article class="about-text">
-        <section class="about-history">
-          <h2 class="underlined-title">Passé</h2>
-          <h3>Reconversion</h3>
-            <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>  
-            <p>En tant qu'Educatrice de terrain d'une part.</p>
-            <p>Puis en tant que responsable de structure.</p>     
-            <p>Aujourd'hui, je fais le choix de me lancer dans <strong>l'univers du web</strong>.</p>   
-        </section>
-        <section class="about-certif">
-          <h2 class="underlined-title">Futur</h2>
-          <h3>Formation</h3>
-          <p>Délivrée par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassrooms</a></p>
-          <p>Parcours "<strong>Intégratrice web</strong>"</p>
-          <p>Du 15 janvier au 15 octobre 2023</p>
-          <p>Certification reconnue par l'État</p>
-        </section>
-        <section class="lang">
-          <h2 class="underlined-title">Outils</h2>
-          <h3>Langages et frameworks</h3>
-          <ul class="lang-list"> 
-            <li><i class="fa-brands fa-html5"></i></li>
-            <li><i class="fa-brands fa-css3-alt"></i></li>
-            <li><i class="fa-brands fa-js"></i></li>
-            <li><i class="fa-brands fa-react"></i></li>
+    <main>
+      <section class="home">
+        <div class="home-content">
+          <h2>Je m'appelle Julie BD</h2> 
+          <h3>Je suis <span class="text"></span></h3>
+          <p>Suite à une reconversion professionnelle,
+            <br>je me lance dans le développement web</p>
+          <ul>
+            <li class="ul-link"><a href="https://github.com/JulieBourelDrapier" style="--1:6"><i class="fa-brands fa-github"></i></a></li>
+            <li class="ul-link"><a href="https://www.linkedin.com/in/julie-bourel-drapier/" style="--1:7"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="ul-link"><a href="#" style="--1:8"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
-        </section>
-        <section class="about-skills">
-          <h2 class="underlined-title">Atouts</h2>
-          <h3>Compétences</h3>
-            <p>Présentations et supports de communication</p>
-            <p>Créativités et adaptabilité</p>
-            <p>Versionning via Git/GitHub</p>
-            <p>Gestion de projets</p>
-            <p>Esprit d'équipe</p>
-            <p>Bilingue français/anglais</p>
-        </section>
-      </article>
-    </section>
-
-    <!-- gallerie -->
-    <section id="projects" class="projects-section">
-      <h2>Projets</h2>
-        <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/booki.webp"alt="Flexbox use on Booki website" width="1100" height="500">
-              </li>
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/ohmyfood.webp" alt="Example of page from Ohmyfood website" width="1100" height="500" >
-              </li>
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/sophiebluel.webp" alt="Login page of Sophie Bluel website" width="1100" height="500">
-              </li>   
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/kasa.webp" alt="Example of responsive page from Kasa" width="1100" height="500">
-              </li>   
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/ninacarducci.webp" alt="Gallery categorie from Nina Carducci website" width="1100" height="500">
-              </li>
-              <li class="splide__slide">
-                <img class="splide-img" src="./assets/argentbank.webp" alt="User page from Argent Bank website" width="1100" height="500">
-              </li>
-            </ul>
-          </div>
-        </section>
-        <ul id="thumbnails" class="thumbnails">
-          <li class="thumbnail">
-            <img src="./assets/booki.webp" alt="Small version of Booki">
-          </li>
-          <li class="thumbnail">
-            <img src="./assets/ohmyfood.webp" alt="small version of Ohmyfood">
-          </li>
-          <li class="thumbnail">
-            <img src="./assets/sophiebluel.webp" alt="small version of Sophie Bluel website">
-          </li>
-          
-          <li class="thumbnail">
-            <img src="./assets/kasa.webp" alt="small version of Kasa">
-          </li> 
-          <li class="thumbnail">
-            <img src="./assets/ninacarducci.webp" alt="small version of Nina Carducci website">
-          </li> 
-          <li class="thumbnail">
-            <img src="./assets/argentbank.webp" alt="small vision of argentbank">
-          </li> 
-          <li class="thumbnail">
-            <img src="./assets/argentbank.png" alt="">
-          </li>
-        </ul>
-      
-      <article class="explanations">  
-        <div class="retrospective">
-          <h2>Rétrospective</h2>
-          <h3>Projets choisis</h3>
-            <p>Les différents projets sur lesquels j'ai travaillé m'ont amnené à maitriser HTML5 & CSS3 et à découvrir Javascript et React.</p>
-            <p>Vous pouvez avoir un aperçu de mon travail ci-dessus et consulter mes repositories disponibles sur GitHub.</p>
-            <p>Le fait de décrypter des maquettes, d'utiliser Git et GitHub ainsi que les devtools m'a permis d'entrevoir le quotidien d'un développeur et d'acquérir des automatismes d'observations, d'analyse et de gestion de projet.</p>
-            <p>Autonome, motivée et consciencieuse, je saurais mettre à profit mes compétences au service de votre projet. Ce que je ne sais pas, je sais où le trouver !</p>
-            <p>Petit focus sur deux projets qui m'ont particulièrement marqué :	</p>
-            <div class="github">
-            <p>Le site de Nina Carducci <a class="github-link" href="https//github.com/JulieBourelDrapier/ninacarducci.github.io.git"><i class="fa-brands fa-github"></i></a></p>
-            <p>Le site Kasa <a class="github-link" href="https://github.com/JulieBourelDrapier/kasa.git"><i class="fa-brands fa-github"></i></a></p>
+          <div class="btn-div">
+            <a class="project-btn" href="#projects">Projets</a>
           </div>
         </div>
-        <div class="cards">
-          <!-- <img class="unrotate-arrow" src="./assets/g" alt="flèche" width="50px" height="50px"> -->
-          <div class="flip-card">
-            <div class="flip-card-inner">           
-              <div class="flip-card-front">
-                <h3>Mission Free Lance</h3>
-                <p>Au service de Nina Carducci</p>
-                <p>En quête de visibilité</p>
-                <img class="flip" src="./assets/ninacarducci-small.webp" alt="Mignature du site de Nina Carducci" width="340" height="180">
+      </section>
+      <section class="delayed-display">
+        <section id="about" class="about-me">
+          <h2 class="about-title">À propos de <span class="about-span">moi</span></h2>
+          <section class="about-img">
+            <img src="./assets/home.webp" alt="desk with devtools">
+          </section>
+          <article class="about-text">
+            <section class="about-history">
+              <h2 class="underlined-title">Passé</h2>
+              <h3>Reconversion</h3>
+                <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>  
+                <p>En tant qu'Educatrice de terrain d'une part.</p>
+                <p>Puis en tant que responsable de structure.</p>     
+                <p>Aujourd'hui, je fais le choix de me lancer dans <strong>l'univers du web</strong>.</p>   
+            </section>
+            <section class="about-certif">
+              <h2 class="underlined-title">Futur</h2>
+              <h3>Formation</h3>
+              <p>Délivrée par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassrooms</a></p>
+              <p>Parcours "<strong>Intégratrice web</strong>"</p>
+              <p>Du 15 janvier au 15 octobre 2023</p>
+              <p>Certification reconnue par l'État</p>
+            </section>
+            <section class="lang">
+              <h2 class="underlined-title">Outils</h2>
+              <h3>Langages et frameworks</h3>
+              <ul class="lang-list"> 
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-react"></i></li>
+              </ul>
+            </section>
+            <section class="about-skills">
+              <h2 class="underlined-title">Atouts</h2>
+              <h3>Compétences</h3>
+                <p>Présentations et supports de communication</p>
+                <p>Créativités et adaptabilité</p>
+                <p>Versionning via Git/GitHub</p>
+                <p>Gestion de projets</p>
+                <p>Esprit d'équipe</p>
+                <p>Bilingue français/anglais</p>
+            </section>
+          </article>
+        </section>
+  
+        <!-- gallerie -->
+        <section id="projects" class="projects-section">
+          <h2>Projets</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="splide-img" src="./assets/booki.webp"alt="Flexbox use on Booki website">
+                </div>
+                <div class="swiper-slide">
+                  <img class="splide-img" src="./assets/ohmyfood.webp" alt="Example of page from Ohmyfood website">/
+                </div>
+                <div class="swiper-slide">
+                  <img class="splide-img" src="./assets/sophiebluel.webp" alt="Login page of Sophie Bluel website">
+                </div>
+                <div class="swiper-slide">
+                  <img class="splide-img" src="./assets/ninacarducci.webp" alt="Gallery categorie from Nina Carducci website">
+                </div>
+                <div class="swiper-slide">
+                  <img class="splide-img" src="./assets/argentbank.webp" alt="User page from Argent Bank website">
+                </div>
+  
               </div>
-              <div class="flip-card-back">
-                <h3>Visibilité, accessibilité 
-                  <br>& performance</h3>
-                <p>Optimisation SEO du site one page</p>
-                <p>Adaptation de la syntaxte afin d'assurer l'accessibilité du site</p>
-                <p>Utilisation des rapports Lighthouse et Wave</p>
-                <p>Convertion des images au format webp</p>
-                <p>Visibilité sur les réseaux : usage de balises OpenGraph</p>
-              </div>
+  
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+  
+              <div class="swiper-pagination"></div>
+  
+              <div class="swiper-scrollbar"></div>
+            </div>
+  
+        </section>
+        <article class="explanations">  
+          <div class="retrospective">
+            <h2>Rétrospective</h2>
+            <h3>Projets choisis</h3>
+              <p>Les différents projets sur lesquels j'ai travaillé m'ont amnené à maitriser HTML5 & CSS3 et à découvrir Javascript et React.</p>
+              <p>Vous pouvez avoir un aperçu de mon travail ci-dessus et consulter mes repositories disponibles sur GitHub.</p>
+              <p>Le fait de décrypter des maquettes, d'utiliser Git et GitHub ainsi que les devtools m'a permis d'entrevoir le quotidien d'un développeur et d'acquérir des automatismes d'observations, d'analyse et de gestion de projet.</p>
+              <p>Autonome, motivée et consciencieuse, je saurais mettre à profit mes compétences au service de votre projet. Ce que je ne sais pas, je sais où le trouver !</p>
+              <p>Petit focus sur deux projets qui m'ont particulièrement marqué :	</p>
+              <div class="github">
+              <p><a href="https://github.com/JulieBourelDrapier/ninacarducci.github.io.git">Le site de Nina Carducci <i class="fa-brands fa-github github-link"></i></a></p>
+              <p><a href="https://github.com/JulieBourelDrapier/kasa.git">Le site Kasa <i class="fa-brands fa-github github-link"></i></a></p>
             </div>
           </div>
-
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h3>Mission en entreprise</h3>
-                <p>Modernisation de Kasa</p>
-                <p>Site de locations immobilières</p>
-                <img src="./assets/kasa-small2.webp" alt="Miniature du site Kasa" width="340" height="180">
-              </div>
-              <div class="flip-card-back">
-                <h3>Composants React</h3>
-                <p>Modernisation de l'achitecture du site</p>
-                <p>Usage de React</p>
-                <p>Analyse des maquettes et définition des composants</p>
-                <p>Gestion de l'ensemble des pages du site et imports adéquats</p>
+          <div class="cards">
+            <!-- <img class="unrotate-arrow" src="./assets/g" alt="flèche" width="50px" height="50px"> -->
+            <div class="flip-card">
+              <div class="flip-card-inner">           
+                <div class="flip-card-front">
+                  <h3>Mission Free Lance</h3>
+                  <p>Au service <br>de Nina Carducci</p>
+                  <p>En quête de visibilité</p>
+                  <img class="flip" src="./assets/ninacarducci-small.webp" alt="Mignature du site de Nina Carducci" width="340" height="180">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Visibilité, accessibilité 
+                    <br>& performance</h3>
+                  <p>Optimisation SEO du site one page</p>
+                  <p>Adaptation de la syntaxte afin d'assurer l'accessibilité du site</p>
+                  <p>Utilisation des rapports Lighthouse et Wave</p>
+                  <p>Convertion des images au format webp</p>
+                  <p>Visibilité sur les réseaux : usage de balises OpenGraph</p>
+                </div>
               </div>
             </div>
+  
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Mission en entreprise</h3>
+                  <p>Modernisation de Kasa</p>
+                  <p>Site de locations immobilières</p>
+                  <img src="./assets/kasa-small2.webp" alt="Miniature du site Kasa" width="340" height="180">
+                </div>
+                <div class="flip-card-back">
+                  <h3>Composants React</h3>
+                  <p>Modernisation de l'achitecture du site</p>
+                  <p>Usage de React</p>
+                  <p>Analyse des maquettes et définition des composants</p>
+                  <p>Gestion de l'ensemble des pages du site et imports adéquats</p>
+                </div>
+              </div>
+            </div>
+            <!-- <img class="rotate-arrow" src="./assets/" alt="flèche" width="50px" height="50px"> -->
           </div>
-          <!-- <img class="rotate-arrow" src="./assets/" alt="flèche" width="50px" height="50px"> -->
-        </div>
-      </article> 
-    </section>
-
-    <section id="contact" class="contact-me">
-      <h2>Intéressé par mon profil ?</h2>
-      <h3>Contactez moi</h3>
-      <ul class="contact-info">
-        <li>j.boureldrapier@gmail.com</li>
-        <li><i class="fa-brands fa-linkedin-in"></i>/julie-bourel-drapier/</li>
-      </ul>
-      <a class="arrow-up" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
-    </section>
-      
+        </article> 
+  
+        <section id="contact" class="contact-me">
+          <h2>Intéressé par mon profil ?</h2>
+          <h3>Contactez moi</h3>
+          <ul class="contact-info">
+            <li>j.boureldrapier@gmail.com</li>
+            <li><i class="fa-brands fa-linkedin-in"></i>/julie-bourel-drapier/</li>
+          </ul>
+          <a class="arrow-up" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </section>
+      </section>
+    </main>
     <footer class="footer">
       <p>Copyright © 2023 Julie Bourel-Drapier</p>
     </footer>
-    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/a595cf5885.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>

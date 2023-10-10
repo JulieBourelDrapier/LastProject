@@ -1,3 +1,33 @@
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: true,
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+  effect: 'fade',
+  fadeEffect : {
+    crossfade: true,
+  },
+  autoplay: {
+    delay: 5000,
+  },
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+});
 // presentation animation
 var typed = new Typed(".text",{
   strings: [" ", "développeuse front-end", "curieuse et motivée", "disponible dès lundi !"],
@@ -8,41 +38,3 @@ var typed = new Typed(".text",{
 })
 
 // gallery
-var splide = new Splide( '#main-carousel', {
-  pagination: false,
-} );
-
-
-var thumbnails = document.getElementsByClassName( 'thumbnail' );
-var current;
-
-
-for ( var i = 0; i < thumbnails.length; i++ ) {
-  initThumbnail( thumbnails[ i ], i );
-}
-
-
-function initThumbnail( thumbnail, index ) {
-  thumbnail.addEventListener( 'click', function () {
-    splide.go( index );
-  } );
-}
-
-
-splide.on( 'mounted move', function () {
-  var thumbnail = thumbnails[ splide.index ];
-
-
-  if ( thumbnail ) {
-    if ( current ) {
-      current.classList.remove( 'is-active' );
-    }
-
-
-    thumbnail.classList.add( 'is-active' );
-    current = thumbnail;
-  }
-} );
-
-
-splide.mount();
