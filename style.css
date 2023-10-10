@@ -390,13 +390,13 @@ p{
   display: flex;
   flex-direction: column;
 }
-.main-text{
+/* .main-text{
   display: none;
   @media screen and (min-width: 1100px) {
     display: block;
     margin-top: 10%;
   }
-}
+} */
 .projects-section h2{
   @media screen and (min-width: 1100px) {
     text-align: center;
@@ -687,6 +687,15 @@ font-size: 14px;
 .thumbnail {
   opacity: 0.3;
 }
+.thumbnail.is-active {
+  opacity: 1;
+}
+.thumbnail {
+  ...
+  opacity: 0.3;
+}
+
+
 .thumbnail.is-active {
   opacity: 1;
 }
