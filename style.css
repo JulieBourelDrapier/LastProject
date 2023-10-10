@@ -84,7 +84,7 @@ a{
 }
 h2{
   font-family: var(--hand-police);
-  font-size: 16px;
+  font-size: 18px;
   @media screen and (min-width: 800px) {
     font-size: 36px;
   }
@@ -169,7 +169,7 @@ p{
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 145px 10% 0;
+  padding: 20px 10% 0;
   @media screen and (min-width: 800px) {
     padding: 180px 10% 10%; 
   }
@@ -285,6 +285,7 @@ p{
   margin: auto;
   display: block;
   padding: 20px 0;
+  padding-bottom: 40px;;
   @media screen and (min-width: 800px) {
     width: 90%;
     display: flex;
@@ -326,14 +327,14 @@ p{
 .about-text h2 {
   text-align: center;
   font-family: var(--hand-police);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--fifth-color);
   letter-spacing: 4px;
   font-style: italic;
   padding-top: 10px;
   rotate: -5deg;
   @media screen and (min-width: 1100px) {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 /*animation de soulignage*/
@@ -357,18 +358,19 @@ p{
   transform: scaleX(1);
 }
 .about-text h3{
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--light-police);
   font-weight: bold;
+  text-align: center;
   @media screen and (min-width: 1100px) {
     font-size: 22px;
   }
 }
 .about-text p {
   font-family: var(--light-police);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
-  text-align: start;
+  text-align: center;
   @media screen and (min-width: 1100px) {
     font-size: 20px;
     line-height: 1.4;
@@ -386,6 +388,8 @@ p{
 .lang-list{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 800px) {
     margin: auto;
   }
@@ -449,7 +453,9 @@ p{
 .swiper-scrollbar-drag {
   background-color: var(--fifth-color);
 }
-
+.retrospective h2{
+  text-align: center;
+}
 .retrospective h3{
   font-size: 16px;
   font-family: var(--main-police);
@@ -488,9 +494,11 @@ p{
 .retrospective{
   padding-top: 20px;
   padding-bottom: 50px;
+  text-align: center;
   /* width: 90%; */
   @media screen and (min-width: 800px) {
     max-width: 900px; 
+    text-align: start;
   }
 }
 .cards{
@@ -610,20 +618,21 @@ font-size: 14px;
 }
 .contact-me h2{
   font-family: var(--hand-police);
-  font-size: 15px;
+  font-size: 16px;
   @media screen and (min-width: 800px) {
     font-size: 28px;
   }
 }
 .contact-info li{
   font-family: var(--light-police);
-  font-size: 8px;
+  font-size: 10px;
   @media screen and (min-width: 800px) {
     font-size: 20px;
   }
 }
 .contact-info a {
   font-family: var(--light-police);
+  font-size: 18px;
 }
 .arrow-up i{
   display: none;
