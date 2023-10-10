@@ -672,8 +672,6 @@ font-size: 14px;
   padding: 0;
   justify-content: center;
 }
-
-
 .thumbnail {
   width: 70px;
   height: 70px;
@@ -682,18 +680,13 @@ font-size: 14px;
   margin: 0 0.2rem;
   cursor: pointer;
 }
-
-
 .thumbnail img {
   width: 100%;
   height: auto;
 }
-
 .thumbnail {
   opacity: 0.3;
 }
-
-
 .thumbnail.is-active {
   opacity: 1;
 }
