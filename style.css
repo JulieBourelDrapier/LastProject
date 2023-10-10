@@ -107,7 +107,6 @@ p{
 }
 /* HEADER */
 .header{
-  position: fixed;
   background-color: var(--white); 
   top: 0;
   left: 0;
@@ -608,6 +607,9 @@ font-size: 14px;
   @media screen and (min-width: 800px) {
     font-size: 20px;
   }
+}
+.contact-info a {
+  font-family: var(--light-police);
 }
 .arrow-up i{
   display: none;
