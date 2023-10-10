@@ -110,10 +110,11 @@ p{
   width: 100%;
   padding: 30px 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   z-index: 100;
   @media screen and (min-width: 800px) {
+    flex-direction: row;
     justify-content: space-between;
     gap: 12px;
   }
@@ -191,7 +192,7 @@ p{
   animation: slideTop 1s ease forwards;
   animation-delay: .9s;
 }
-.home-content h2 span{
+.home-content h3 span{
   color: var(--fourth-color);
 }
 .home-content p{
@@ -566,14 +567,11 @@ p{
   padding: 14px;
   font-weight: bolder;
 }
-
-
 .flip-card-front img {
   width: 345px;
   height: 300px;
   padding: 12px;
-  border-radius: 18px ;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Arrows & links*/
@@ -610,8 +608,10 @@ font-size: 14px;
 /* CONTACT */
 .contact-me{
   text-align: center;
+  margin: auto;
+  padding-bottom: 40px;
 }
-.contact-me h2, .contact-me h3{
+.contact-me h2{
   font-family: var(--hand-police);
   font-size: 15px;
   @media screen and (min-width: 800px) {
@@ -620,7 +620,7 @@ font-size: 14px;
 }
 .contact-info li{
   font-family: var(--light-police);
-  font-size: 15px;
+  font-size: 8px;
   @media screen and (min-width: 800px) {
     font-size: 20px;
   }
@@ -642,16 +642,17 @@ font-size: 14px;
 .footer{
   background-color: var(--main-color);
   margin: auto;
-  height: 60px;
+  padding-top: 35px;
+  height: 80px;
  }
  .footer p{
    font-family: var(--hand-police);
    padding-bottom: 20px;
    text-align: center;
-   font-size: 12px;
+   font-size: 10px;
    color: var(--white); 
   @media screen and (min-width: 800px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
