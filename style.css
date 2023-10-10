@@ -389,20 +389,55 @@ p{
 .projects-section{
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 100%;
 }
-/* .main-text{
-  display: none;
-  @media screen and (min-width: 1100px) {
-    display: block;
-    margin-top: 10%;
-  }
-} */
 .projects-section h2{
   @media screen and (min-width: 1100px) {
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     margin: 15px;
   }
+}
+
+/*GALLERY*/
+.splide{
+  margin: auto;
+  width: 100%;
+}
+.splide-img {
+ object-fit: contain;
+}
+.thumbnails {
+  display: flex;
+  margin: -14rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+.thumbnail {
+  width: 124px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.thumbnail {
+  opacity: 0.3;
+}
+.thumbnail.is-active {
+  opacity: 1;
+}
+.thumbnail {
+  ...
+  opacity: 0.3;
+}
+.thumbnail.is-active {
+  opacity: 1;
 }
 .retrospective h3{
   font-size: 16px;
@@ -413,6 +448,7 @@ p{
     font-size: 20px;
   }
 }
+
 .retrospective p{
   font-size: 16px;
   font-family: var(--light-police);
@@ -423,72 +459,6 @@ p{
   }
 }
 
-/* CAROUSEL */
-.carousel-container {
-  display: none;
-  @media screen and (min-width: 1100px) {
-    display: flex;    
-  }
-}
-.carousel {
-  margin: auto;
-  width: 100%;
-  background-color: var(--white); 
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.1);
-}
-.slides {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  width: 98%;
-  transition: 1s ease-in-out all;
-}
-figure {
-  display: flex;
-  flex-flow: column;
-  padding: 12%;
-  width: 100%;
-  margin: auto;
-}
-figcaption {
-  padding-bottom: 8px;
-  text-align: center;
-  font-style: italic;
-  font-family: var(--light-police);
-  color: var(--white); 
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.controls {
-  display: flex;
-  top: 50%;
-  left: 0;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 99999;
-  transition: all ease 0.5s;
-  font-size: 55px;
-  color : var(--fourth-color);
-}
-.control {
-  position: relative;
-  margin: 264px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: .7;
-  transition: ease .1s;
-  cursor: pointer;
-}      
-.control:hover,
-.control:focus{
-  opacity: 1;
-  color: var(--fourth-color);
-}
 
 /*article + flip cards*/ 
 .explanations {
@@ -545,7 +515,7 @@ figcaption {
   color: black;
   background-color: var(--white); 
   border-radius: 12px;
-  box-shadow: var(--fourth-color) 0 0 3px;
+  box-shadow: var(--second-color) 0 0 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -665,37 +635,3 @@ font-size: 14px;
 }
 
 
-/*galerie*/
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
-}
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
-}
-.thumbnail img {
-  width: 100%;
-  height: auto;
-}
-.thumbnail {
-  opacity: 0.3;
-}
-.thumbnail.is-active {
-  opacity: 1;
-}
-.thumbnail {
-  ...
-  opacity: 0.3;
-}
-
-
-.thumbnail.is-active {
-  opacity: 1;
-}
