@@ -5,6 +5,7 @@
   --third-color: #f8de65;
   --fourth-color: #00c092;
   --fifth-color: #ffbbab;
+  --sixth-color: #fb8960;
   --white: #fff;
   --black: #000;
 
@@ -395,7 +396,7 @@ p{
 .projects-section h2{
   text-align: center;
   @media screen and (min-width: 1100px) {
-    font-size: 36px;
+    font-size: 42px;
     margin: 15px;
   }
 }
@@ -404,14 +405,16 @@ p{
 .splide{
   display: none;
   @media screen and (min-width: 1100px) {
-    display: block;
+    display: flex;
     width: 100%;
   }
 }
 .splide-img {
- object-fit: contain;
- display: block;
- margin: auto;
+  @media screen and (min-width: 1100px) {
+  object-fit: contain;
+  display: block;
+  margin: auto; 
+  }
 }
 .thumbnails {
   display: flex;
@@ -538,10 +541,9 @@ p{
   height: 100%;
   padding: 0;
   backface-visibility: hidden;
-  color: black;
-  background-color: var(--white); 
-  border-radius: 12px;
-  box-shadow: var(--second-color) 0 0 3px;
+  color:var(--white);
+  background-color: var(--fifth-color); 
+  border-radius: 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,32 +554,26 @@ p{
   transform: rotateY(180deg);
   padding: 0;
 }
-.flip-card-back h3{
+.flip-card-back h3, .flip-card-front h3{
   font-family: var(--hand-police);
-  font-size: 14px;
+  font-size: 21px;
+  padding-top: 11px;
+  text-align: center;
 }
-.flip-card-back p{
-  font-size: 20px;
+.flip-card-back p, .flip-card-front p{
+  font-size: 18px;
   line-height: 0.7;
+  padding: 14px;
+  font-weight: bolder;
 }
-.flip-card-front {
-  padding: 0;
-}
-.flip-card-front h3{
-  font-family: var(--hand-police);
-  font-size: 20px;
-  padding: 10px;
-}
-.flip-card-front p{
-  font-size: 20px;
-}
-.flip-card img {
-  /* width: 345px;
+
+
+.flip-card-front img {
+  width: 345px;
   height: 300px;
   padding: 12px;
   border-radius: 18px ;
-  object-fit: contain; */
-  font-family: var(--light-police);
+  object-fit: cover;
 }
 
 /* Arrows & links*/
@@ -608,7 +604,7 @@ font-size: 14px;
 }
 .github-link:hover,
 .github-link:focus{
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 /* CONTACT */
