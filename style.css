@@ -568,13 +568,12 @@ p {
 .project-btn{
   @media screen and (min-width: 800px) {
     font-size: 17px;
-    font-weight: bolder;
     display: inline-block;
     padding: 10px;
     background: var(--fourth-color);
     color: var(--white); 
-    font-family: var(--light-police);
-    letter-spacing: 2px;
+    font-family: var(--main-police);
+    letter-spacing: 1px;
     border-radius: 20px;
   }
 }
@@ -726,12 +725,10 @@ p {
     font-size: 20px;
   }
 }
-
 .arrow-up i {
   @media screen and (min-width: 800px) {
     display: block;
     font-size: 36px;
-    padding: 40px; 
     text-align: end;
     color: var(--main-color);
   }
@@ -740,8 +737,6 @@ p {
 .arrow-up i:focus {
   color: var(--fifth-color);
 }
-
-
 
 /* FOOTER */
  .footer p {

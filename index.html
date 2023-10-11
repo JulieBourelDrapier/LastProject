@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Gruppo&family=Montserrat:wght@100;400&family=Passion+One:wght@400;700&family=Righteous&family=Rock+Salt&display=swap" rel="stylesheet">
-  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,10 +15,10 @@
     <header id="home" class="header">
       <a href="#" class="logo">Portfolio</a>
       <nav class="navbar">
-        <a href="#" style="--1:1">Accueil</a> 
-        <a href="#about" style="--1:2">À propos</a>
-        <a href="#projects" style="--1:3">Projets</a>
-        <a href="#contact" style="--1:4">Contact</a>
+        <a href="#">Accueil</a> 
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -30,22 +30,22 @@
           <p>Suite à une reconversion professionnelle,
             <br>je me lance dans le développement web</p>
           <ul>
-            <li class="links"><a href="https://github.com/JulieBourelDrapier" style="--1:5"><i class="fa-brands fa-github"></i></a></li>
-            <li class="links"><a href="https://www.linkedin.com/in/julie-bourel-drapier/" style="--1:6"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="links"><a href="https://github.com/JulieBourelDrapier"><i class="fa-brands fa-github"></i></a></li>
+            <li class="links"><a href="https://www.linkedin.com/in/julie-bourel-drapier/"><i class="fa-brands fa-linkedin-in"></i></a></li>
           </ul>
           <div class="btn-div">
             <a class="project-btn" href="#projects">Projets</a>
           </div>
         </div>
       </section>
-      <section class="delayed-display">
+      <div class="delayed-display">
         <section id="about" class="about-me">
           <h2 class="about-title">À propos de <span class="about-span">moi</span></h2>
-          <section class="about-img">
+          <div class="about-img">
             <img src="./assets/home.webp" alt="desk with devtools">
-          </section>
-          <article class="about-text">
-            <section class="about-history">
+          </div>
+          <div class="about-text">
+            <section>
               <h2 class="underlined-title">Passé</h2>
               <h3>Reconversion</h3>
                 <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>  
@@ -84,19 +84,15 @@
                 <p>Esprit d'équipe</p>
                 <p>Bilingue français/anglais</p>
             </section>
-          </article>
+          </div>
         </section>
   
-        <!-- gallerie -->
         <section id="projects" class="projects-section">
           <h2>Projets</h2>
-            <!-- Slider main container -->
             <div class="swiper">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
-                  <img class="splide-img" src="./assets/booki.webp"alt="Flexbox use on Booki website">
+                  <img class="splide-img" src="./assets/booki.webp" alt="Flexbox use on Booki website">
                 </div>
                 <div class="swiper-slide">
                   <img class="splide-img" src="./assets/ohmyfood.webp" alt="Example of page from Ohmyfood website">/
@@ -110,17 +106,12 @@
                 <div class="swiper-slide">
                   <img class="splide-img" src="./assets/argentbank.webp" alt="User page from Argent Bank website">
                 </div>
-  
               </div>
-  
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-  
               <div class="swiper-pagination"></div>
-  
               <div class="swiper-scrollbar"></div>
             </div>
-  
         </section>
         <article class="explanations">  
           <div class="retrospective">
@@ -137,7 +128,7 @@
             </div>
           </div>
           <div class="cards">
-            <img class="unrotate-arrow" src="./assets/arrow.png" alt="flèche" width="50px" height="50px">
+            <img class="unrotate-arrow" src="./assets/arrow.png" alt="flèche" width="50" height="50">
             <div class="flip-card">
               <div class="flip-card-inner">           
                 <div class="flip-card-front">
@@ -152,7 +143,7 @@
                   <p>Optimisation SEO du site one page</p>
                   <p>Adaptation de la syntaxte afin d'assurer l'accessibilité du site</p>
                   <p>Utilisation des rapports Lighthouse et Wave</p>
-                  <p>Gestion des imageset conversion au format webp</p>
+                  <p>Gestion des images et conversion au format webp</p>
                   <p>Visibilité sur les réseaux : usage de balises OpenGraph</p>
                 </div>
               </div>
@@ -175,28 +166,27 @@
                 </div>
               </div>
             </div>
-            <img class="rotate-arrow" src="./assets/arrow.png" alt="flèche" width="50px" height="50px">
+            <img class="rotate-arrow" src="./assets/arrow.png" alt="flèche" width="50" height="50">
           </div>
-          <div class="retrospective">
+          <section class="retrospective">
+            <h2>Pour conclure</h2>
             <p>Ces projets, très distincts, m'ont permis d'envisager des situations de travail opposées. Avec d'un côté, une mission en free lance. Et de l'autre, une mission en entreprise, où j'intègrais une équipe déjà en cours de travail sur l'élaboration d'un projet.</p>
-            <p>Les compétences ciblées étaient aussi très différentes. J'ai découverts des notions d'accessibilité et des outils conçus pour veiller à la performance d'un côté. Et l'usage de React de l'autre.</p>
-            <p>Ces projets se sont avérés très formateurs et ont participé à la création de mon identité professionnelle tant d'un point de vue éthique que d'un point de vue d'acquisition de compétences.</p>
-          </div>
+            <p>Les compétences ciblées étaient aussi très différentes. J'ai découverts des notions d'accessibilité ainsi que des outils conçus pour veiller à la performance d'un côté. Et l'usage de React de l'autre.</p>
+          </section>
         </article> 
   
         <section id="contact" class="contact-me">
           <h2>Intéressé par mon profil ?</h2>
           <h3>Contactez moi</h3>
           <p class="contact-info"><a href="https://www.linkedin.com/in/julie-bourel-drapier/"><i class="fa-brands fa-linkedin"></i> julie-bourel-drapier</a></p>
+          <a class="arrow-up" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </section>
-
-        <a class="arrow-up" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
-      
-      </section>
+      </div>
     </main>
     <footer class="footer">
-      <p>Copyright © 2023 Julie Bourel-Drapier</p>
+      <p>Copyright © 2023 Julie Bourel - Drapier</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/a595cf5885.js" crossorigin="anonymous"></script>
