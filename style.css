@@ -12,10 +12,9 @@
   --main-police: 'righteous', sans-serif;
   --hand-police: 'rock salt', sans-serif;
   --light-police: 'gruppo', sans-serif;
-  
 }
 /* KEYFRAMES */
-@keyframes slideRight{
+@keyframes slideRight {
   0%{
     transform: translateX(-100px);
     opacity: 0;
@@ -25,7 +24,7 @@
     opacity: 1;
   }
 }
-@keyframes slideLeft{
+@keyframes slideLeft {
   0%{
     transform: translateX(-100px);
     opacity: 0;
@@ -35,7 +34,7 @@
     opacity: 1;
   }
 }
-@keyframes slideTop{
+@keyframes slideTop {
   0%{
     transform: translateY(100px);
     opacity: 0;
@@ -45,7 +44,7 @@
     opacity: 1;
   }
 }
-@keyframes slideBottom{
+@keyframes slideBottom {
   0%{
     transform: translateY(100px);
     opacity: 0;
@@ -57,59 +56,50 @@
 }
 
 /* GENERAL */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--main-police); 
 }
-body{
+body {
   color: var(--main-color);
   margin: auto;
 }
-main{
+main {
   max-width: 1200px;
   margin: 0 auto;
 }
-li{
+li {
   list-style: none;
 }
-strong{
+strong {
   font-family: 'gruppo', 'inclusive sans', sans-serif;
   font-weight: normal;
 }
-a{
+a {
   text-decoration: none;
   color: var(--main-color);
 }
-h2{
+h2 {
   font-family: var(--hand-police);
   font-size: 18px;
-  @media screen and (min-width: 800px) {
-    font-size: 36px;
-  }
 }
-h3{
+h3 {
   font-family: var(--main-police);
   font-size: 15px;
-  @media screen and (min-width: 800px) {
-    font-size: 28px;
-    }
 }
-p{
+p {
   font-family: var(--light-police);
   font-size: 18px;
-  @media screen and (min-width: 800px) {
-    font-size: 24px;
-  }
 }
-.delayed-display{
+.delayed-display {
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 2s;
 }
 /* HEADER */
-.header{
+.header {
   background-color: var(--white); 
   top: 0;
   left: 0;
@@ -119,15 +109,8 @@ p{
   flex-direction: column;
   align-items: center;
   z-index: 100;
-  @media screen and (min-width: 800px) {
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 12px;
-  }
 } 
-.logo{
+.logo {
   position: relative;
   font-size: 38px;
   color: var(--third-color);
@@ -137,44 +120,36 @@ p{
   opacity: 0;
   animation: slideRight 1s ease forwards;
 } 
-.navbar a{
+.navbar a {
   font-size: 10px;
   display: inline-block;
   color: var(--main-color); 
   text-decoration: none;
-  padding-left: 10px;/*35*/
+  padding-left: 10px;
   transition: .3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s * var(--1));
-  @media screen and (min-width: 800px) {
-    font-size: 18px;
-    padding-left: 25px;
-  }
 } 
 .navbar a:hover, 
 .about-text a:hover,
 .navbar a:focus,
-.about-text a:focus{
+.about-text a:focus {
   color: var(--fourth-color);
 }
 
 /* HOME */
-.home{
+.home {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  /* height: 100vh; */
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   padding: 20px 10% 0;
-  @media screen and (min-width: 800px) {
-    padding: 180px 10% 10%; 
-  }
 }
-.home-content{
+.home-content {
   max-width: 600px;
   margin: 1px;
 }
@@ -185,9 +160,6 @@ p{
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
-  @media screen and (min-width: 800px) {
-    font-size: 36px;
-  }
 }
 .home-content h3 {
   font-family: var(--main-police);
@@ -195,20 +167,20 @@ p{
   animation: slideBottom 1s ease forwards;
   animation-delay: 1s;
 }
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
   margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
   animation-delay: .9s;
 }
-.home-content h3 span{
+.home-content h3 span {
   color: var(--fourth-color);
 }
-.home-content p{
+.home-content p {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: .7s; 
 }
-.home-content li{
+.home-content li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -221,108 +193,45 @@ p{
   transition: .2s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: calc (.8s * var(--1));
-  @media screen and (min-width: 800px) {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    margin: 30px 15px 30px 0;
-  }    
+  animation-delay: calc (.8s * var(--1));    
 }
 .home-content li:hover,
-.home-content li:focus{
+.home-content li:focus {
   background: var(--fourth-color);
   box-shadow: 0 0 30px var(--fourth-color);
   border: none;
 }
-
 .ul-link:hover,
 .ul-link:focus,
 .ul-link:hover i, 
-.ul-link:focus i{
+.ul-link:focus i {
   color: var(--white); 
 }
-.btn-div{
+.btn-div {
   display: none;
-  @media screen and (min-width: 800px) {
-    display: inline-block;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
-    margin-top: 10px;  
-  }
-}
-.btn-div:hover,
-.btn-div:focus{
-  @media screen and (min-width: 800px) {
-    color: var(--white); 
-  }
-}
-.project-btn{
-  @media screen and (min-width: 800px) {
-    font-size: 14px;
-    display: inline-block;
-    padding: 8px;
-    background: var(--fourth-color);
-    color: var(--white); 
-    font-family: var(--hand-police);
-    letter-spacing: 2px;
-    border-radius: 20px;
-  }
-}
-.project-btn:hover,
-.project-btn:focus{
-  @media screen and (min-width: 800px) {
-    display: block;
-    background: var(--fifth-color);
-    color: var(--white);  
-  }
 }
 
-/* ABOUT ME SECTION */
-.about-me{
+/* ABOUT-ME SECTION */
+.about-me {
   width: 95%;
   margin: auto;
   display: block;
   padding: 20px 0;
-  padding-bottom: 40px;;
-  @media screen and (min-width: 800px) {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
+  padding-bottom: 40px;
 }
-.about-title{
+.about-title {
   text-align: center;
 }
-.about-span{
+.about-span {
   color: var(--third-color);
   font-family: var(--hand-police);
 }
-.about-img img{
+.about-img img {
   display: none;
-  @media screen and (min-width: 800px) {
-    object-fit: contain;
-    display: block;
-  }
 }
-.about-text{
+.about-text {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 800px) {
-    flex-direction: row; 
-    gap: 40px;  
-    margin-top: 20px;
-  }
-}
-.about-text section{
-  @media screen and (min-width: 800px) {
-    width: 100%; 
-  }
 }
 .about-text h2 {
   text-align: center;
@@ -333,9 +242,6 @@ p{
   font-style: italic;
   padding-top: 10px;
   rotate: -5deg;
-  @media screen and (min-width: 1100px) {
-    font-size: 24px;
-  }
 }
 /*animation de soulignage*/
 .underlined-title {
@@ -357,131 +263,45 @@ p{
 .underlined-title:focus::after {
   transform: scaleX(1);
 }
-.about-text h3{
+.about-text h3 {
   font-size: 18px;
   font-family: var(--light-police);
   font-weight: bold;
   text-align: center;
-  @media screen and (min-width: 1100px) {
-    font-size: 22px;
-  }
 }
 .about-text p {
   font-family: var(--light-police);
   font-size: 16px;
   line-height: 1.2;
-  text-align: center;
-  @media screen and (min-width: 1100px) {
-    font-size: 20px;
-    line-height: 1.4;
-  } 
+  text-align: center; 
 }
-.link-OCR{
+.link-OCR {
   font-size: 11px;
   font-weight: bold;
   font-family: var(--hand-police);
   letter-spacing: 1px;
-  @media screen and (min-width: 1100px) {
-    font-size: 15px;
-  }
 }
-.lang-list{
+.lang-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 800px) {
-    margin: auto;
-  }
 }
-.lang-list i{
+.lang-list i {
   font-size: 40px;
   margin: 7px;
-  @media screen and (min-width: 800px) {
-    font-size: 40px;
-  }
 }
 
 /* PROJECTS */
-.projects-section{
+.projects-section {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 100%;
 }
-.projects-section h2{
-  text-align: center;
-  @media screen and (min-width: 1100px) {
-    font-size: 42px;
-    margin: 15px;
-  }
-}
-
-/*GALLERY*/
-.swiper {
-  width: 90%;
-  height: 300px;
-  @media screen and (min-width: 1100px) {
-    width: 1100px;
-  }
-  @media screen and (min-width: 800px) {
-    height: 500px;
-  }
-}
-
-.swiper-slide img {
-  background-color: var(--white);
-  height: 300px;
-  width: 100%;
-  object-fit: contain;
-  @media screen and (min-width: 1100px) {
-    width: 1100px;
-  }
-  @media screen and (min-width: 800px) {
-    height: 500px;
-  }
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: var(--fifth-color);
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--fifth-color);
-}
-
-.swiper-scrollbar-drag {
-  background-color: var(--fifth-color);
-}
-.retrospective h2{
+.projects-section h2 {
   text-align: center;
 }
-.retrospective h3{
-  font-size: 16px;
-  font-family: var(--main-police);
-  padding: 7px;
-  @media screen and (min-width: 800px) {
-    padding: 12px;
-    font-size: 20px;
-  }
-}
-
-.retrospective p, .retrospective a {
-  font-size: 16px;
-  font-family: var(--light-police);
-  padding: 7px;
-  @media screen and (min-width: 800px) {
-    padding: 12px;
-    font-size: 20px;
-  }
-}
-
-.retrospective a:hover, .retrospective a:focus {
-  color: var(--fourth-color);
-}
-
-
-/*article + flip cards*/ 
 .explanations {
   margin-top: 10%;
   display: flex;
@@ -491,34 +311,65 @@ p{
   width: 95%;
   padding: 40px 0;
 }
-.retrospective{
+.retrospective {
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
-  /* width: 90%; */
-  @media screen and (min-width: 800px) {
-    max-width: 900px; 
-    text-align: start;
-  }
 }
-.cards{
+.retrospective h2 {
+  text-align: center;
+}
+.retrospective h3 {
+  font-size: 16px;
+  font-family: var(--main-police);
+  padding: 7px;
+}
+.retrospective p, 
+.retrospective a {
+  font-size: 16px;
+  font-family: var(--light-police);
+  padding: 7px;
+}
+.retrospective a:hover, 
+.retrospective a:focus {
+  color: var(--fourth-color);
+}
+
+/*SLIDER*/
+.swiper {
+  width: 90%;
+  height: 300px;
+}
+.swiper-slide img {
+  background-color: var(--white);
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: var(--fifth-color);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--fifth-color);
+}
+.swiper-scrollbar-drag {
+  background-color: var(--fifth-color);
+}
+
+/*FLIP-CARDS*/
+.cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  @media screen and (min-width: 800px) {
-    flex-direction: row;
-  }
 }
-/* flip cards  */
 .flip-card {
   background-color: transparent;
   min-width: 345px;
   height: 400px;
   perspective: 1000px;
 }
-
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -526,19 +377,8 @@ p{
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-@media (hover: hover) {
-  .flip-card:hover .flip-card-inner  {
-      transform: rotateY(180deg);
-    }
-}
-
-@media (hover: none) {
-  .flip-card:active .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-}
-
-.flip-card-front, .flip-card-back {
+.flip-card-front, 
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -552,19 +392,20 @@ p{
   justify-content: center;
   align-items: center;
 }
-
 .flip-card-back {
   transform: rotateY(180deg);
   padding: 0;
 }
-.flip-card-back h3, .flip-card-front h3, .flip-card-front p{
+.flip-card-back h3, 
+.flip-card-front h3, 
+.flip-card-front p {
   font-family: var(--hand-police);
   font-size: 21px;
   padding-top: 10px;
   text-align: center;
   line-height: 1.7;
 }
-.flip-card-back p{
+.flip-card-back p {
   font-family: var(--light-police);
   text-align: center;
   font-size: 20px;
@@ -579,63 +420,314 @@ p{
   object-fit: contain;
 }
 
-/* Arrows & links*/
+/* ARROWS & LINKS*/
 .github {
   padding: 20px;;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.github p, .github i{
+.github p, 
+.github i {
 font-size: 14px;
 }
-.rotate-arrow{
+.rotate-arrow {
   display: none;
-  @media screen and (min-width: 800px) {
-    display: block;
-    rotate: 90deg; 
-  }
 }
-.unrotate-arrow{
+.unrotate-arrow {
   display: none;
-  @media screen and (min-width: 800px) {
-    display: block;
-  }
 }
 .github-link{
   font-size: 20px;
 }
 .github-link:hover,
-.github-link:focus{
+.github-link:focus {
   color: var(--fourth-color);
 }
 
-/* CONTACT */
-.contact-me{
+/* CONTACT-ME SECTION */
+.contact-me {
   text-align: center;
   margin: auto;
   padding: 40px;
 }
-.contact-me h2{
+.contact-me h2 {
   font-family: var(--hand-police);
   font-size: 16px;
-  @media screen and (min-width: 800px) {
-    font-size: 28px;
-  }
 }
-.contact-info li{
+.contact-info li {
   font-family: var(--light-police);
   font-size: 10px;
-  @media screen and (min-width: 800px) {
-    font-size: 20px;
-  }
 }
 .contact-info a {
   font-family: var(--light-police);
   font-size: 18px;
 }
-.arrow-up i{
+
+/*ARROW YO MOVE BACK UP*/
+.arrow-up i {
   display: none;
+}
+.arrow-up i:hover,
+.arrow-up i:focus {
+  color: var(--third-color);
+}
+
+/*FOOTER*/ 
+.footer {
+  background-color: var(--main-color);
+  margin: auto;
+  padding-top: 35px;
+ }
+ .footer p {
+   font-family: var(--hand-police);
+   padding-bottom: 20px;
+   text-align: center;
+   font-size: 10px;
+   color: var(--white);
+}
+
+/********************** @ MEDIA QUERIES **********************/
+h2 {
+  @media screen and (min-width: 800px) {
+    font-size: 36px;
+  }
+}
+h3 {
+  @media screen and (min-width: 800px) {
+    font-size: 28px;
+    }
+}
+p {
+  @media screen and (min-width: 800px) {
+    font-size: 24px;
+  }
+}
+
+/* HEADER */
+.header {
+  @media screen and (min-width: 800px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+  }
+} 
+.navbar a {
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+} 
+
+/* HOME */
+.home {
+  @media screen and (min-width: 800px) {
+    padding: 180px 10% 10%; 
+  }
+}
+.home-content h2 {
+  @media screen and (min-width: 800px) {
+    font-size: 36px;
+  }
+}
+.home-content li {
+  @media screen and (min-width: 800px) {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 30px 15px 30px 0;
+  }    
+}
+
+.btn-div {
+  @media screen and (min-width: 800px) {
+    display: inline-block;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+    margin-top: 10px;  
+  }
+}
+.btn-div:hover,
+.btn-div:focus {
+  @media screen and (min-width: 800px) {
+    color: var(--white); 
+  }
+}
+.project-btn{
+  @media screen and (min-width: 800px) {
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px;
+    background: var(--fourth-color);
+    color: var(--white); 
+    font-family: var(--hand-police);
+    letter-spacing: 2px;
+    border-radius: 20px;
+  }
+}
+.project-btn:hover,
+.project-btn:focus {
+  @media screen and (min-width: 800px) {
+    display: block;
+    background: var(--fifth-color);
+    color: var(--white);  
+  }
+}
+
+/* ABOUT-ME SECTION */
+.about-me {
+  @media screen and (min-width: 800px) {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+.about-img img {
+  @media screen and (min-width: 800px) {
+    object-fit: contain;
+    display: block;
+  }
+}
+.about-text {
+  @media screen and (min-width: 800px) {
+    flex-direction: row; 
+    gap: 40px;  
+    margin-top: 20px;
+  }
+}
+.about-text section {
+  @media screen and (min-width: 800px) {
+    width: 100%; 
+  }
+}
+.about-text h2 {
+  @media screen and (min-width: 1100px) {
+    font-size: 24px;
+  }
+}
+.about-text h3 {
+  @media screen and (min-width: 1100px) {
+    font-size: 22px;
+  }
+}
+.about-text p {
+  @media screen and (min-width: 1100px) {
+    font-size: 20px;
+    line-height: 1.4;
+  } 
+}
+.link-OCR {
+  @media screen and (min-width: 1100px) {
+    font-size: 15px;
+  }
+}
+.lang-list {
+  @media screen and (min-width: 800px) {
+    margin: auto;
+  }
+}
+.lang-list i {
+  @media screen and (min-width: 800px) {
+    font-size: 40px;
+  }
+}
+
+/* PROJECTS-SECTION */
+.projects-section h2 {
+  @media screen and (min-width: 1100px) {
+    font-size: 42px;
+    margin: 15px;
+  }
+}
+
+/*EXPLANATIONS*/ 
+.retrospective {
+  @media screen and (min-width: 800px) {
+    max-width: 900px; 
+    text-align: start;
+  }
+}
+.retrospective h3 {
+  @media screen and (min-width: 800px) {
+    padding: 12px;
+    font-size: 20px;
+  }
+}
+.retrospective p, .retrospective a {
+  @media screen and (min-width: 800px) {
+    padding: 12px;
+    font-size: 20px;
+  }
+}
+
+/*SLIDER*/
+.swiper {
+  @media screen and (min-width: 1100px) {
+    width: 1100px;
+  }
+  @media screen and (min-width: 800px) {
+    height: 500px;
+  }
+}
+.swiper-slide img {
+  @media screen and (min-width: 1100px) {
+    width: 1100px;
+  }
+  @media screen and (min-width: 800px) {
+    height: 500px;
+  }
+}
+
+/* FLIPCARDS */
+.cards{
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
+}
+@media (hover: hover) {
+  .flip-card:hover .flip-card-inner  {
+      transform: rotateY(180deg);
+    }
+}
+
+@media (hover: none) {
+  .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* FLIPCARDS ARROWS*/
+.rotate-arrow {
+  @media screen and (min-width: 800px) {
+    display: block;
+    rotate: 90deg; 
+  }
+}
+.unrotate-arrow {
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+}
+
+/* CONTACT-ME SECTION */
+.contact-me h2 {
+  @media screen and (min-width: 800px) {
+    font-size: 28px;
+  }
+}
+.contact-info li {
+  @media screen and (min-width: 800px) {
+    font-size: 20px;
+  }
+}
+.arrow-up i {
   @media screen and (min-width: 800px) {
     display: block;
     font-size: 36px;
@@ -644,25 +736,12 @@ font-size: 14px;
     color: var(--main-color);
   }
 }
-.arrow-up i:hover,
-.arrow-up i:focus{
-  color: var(--third-color);
-}
-.footer{
-  background-color: var(--main-color);
-  margin: auto;
-  padding-top: 35px;
- }
- .footer p{
-   font-family: var(--hand-police);
-   padding-bottom: 20px;
-   text-align: center;
-   font-size: 10px;
-   color: var(--white); 
+
+/* FOOTER */
+ .footer p {
   @media screen and (min-width: 800px) {
     font-size: 20px;
   }
-
 }
 
 
