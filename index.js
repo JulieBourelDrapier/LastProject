@@ -37,4 +37,3 @@ var typed = new Typed(".text",{
   loop: true
 })
 
-// gallery

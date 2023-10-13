@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio Julie BD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Gruppo&family=Montserrat:wght@100;400&family=Passion+One:wght@400;700&family=Righteous&family=Rock+Salt&display=swap" rel="stylesheet">
   <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Julie Bourel-Drapier, développeuse front en métropole lilloise">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="src=./assets/JBD.webp">
+	<meta property="og:url" content="https://julieboureldrapier.github.io/LastProject/">
+	<meta property="og:description" content="Julie Bourel-Drapier, développeuse front junior en métropole lilloise">
 </head>
 
 <body>
@@ -32,6 +37,7 @@
           <ul>
             <li class="links"><a href="https://github.com/JulieBourelDrapier"><i class="fa-brands fa-github"></i></a></li>
             <li class="links"><a href="https://www.linkedin.com/in/julie-bourel-drapier/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="links"><a href="./assets/cv2023.pdf"><i class="fa-solid fa-file-pdf"></i></a></li>
           </ul>
           <div class="btn-div">
             <a class="project-btn" href="#projects">Projets</a>
@@ -51,12 +57,12 @@
                 <p>J'ai longtemps travaillé dans le champs de la petite enfance.</p>  
                 <p>En tant qu'éducatrice de terrain d'une part.</p>
                 <p>Puis en tant que responsable de structure.</p>     
-                <p>Aujourd'hui, je fais le choix de me lancer dans <strong>l'univers du web</strong>.</p>   
+                <p>Aujourd'hui, je fais le choix de me lancer dans <strong>l'univers du web</strong>.</p> 
             </section>
             <section class="about-certif">
               <h2 class="underlined-title">Futur</h2>
               <h3>Formation</h3>
-              <p>Proposée par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassrooms</a></p>
+              <p>Proposée et encadrée par <a class="link-OCR" href="https://openclassrooms.com.">OpenClassrooms</a></p>
               <p>Parcours 
                 <br>"<strong>Intégratrice web</strong>"</p>
               <p>Du 15 janvier au 15 octobre 2023</p>
@@ -101,7 +107,7 @@
                   <img class="splide-img" src="./assets/sophiebluel.webp" alt="Login page of Sophie Bluel website">
                 </div>
                 <div class="swiper-slide">
-                  <img class="splide-img" src="./assets/ninacarducci.webp" alt="Gallery categorie from Nina Carducci website">
+                  <img class="splide-img" src="./assets/ninacarducci-1.webp" alt="Gallery categorie from Nina Carducci website">
                 </div>
                 <div class="swiper-slide">
                   <img class="splide-img" src="./assets/argentbank.webp" alt="User page from Argent Bank website">
@@ -128,7 +134,7 @@
             </div>
           </div>
           <div class="cards">
-            <img class="unrotate-arrow" src="./assets/arrow.png" alt="flèche" width="50" height="50">
+            <img class="unrotate-arrow" src="./assets/arrow.png" alt="flèche" width="40" height="40">
             <div class="flip-card">
               <div class="flip-card-inner">           
                 <div class="flip-card-front">
@@ -166,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <img class="rotate-arrow" src="./assets/arrow.png" alt="flèche" width="50" height="50">
+            <img class="rotate-arrow" src="./assets/arrow.png" alt="flèche" width="40" height="40">
           </div>
           <section class="retrospective">
             <h2>Pour conclure</h2>
@@ -178,18 +184,50 @@
         <section id="contact" class="contact-me">
           <h2>Intéressé par mon profil ?</h2>
           <h3>Contactez moi</h3>
+          <a href="j.boureldrapier@gmail.com"><i class="fa-solid fa-envelope"></i> j.boureldrapier@gmail.com</a>
           <p class="contact-info"><a href="https://www.linkedin.com/in/julie-bourel-drapier/"><i class="fa-brands fa-linkedin"></i> julie-bourel-drapier</a></p>
           <a class="arrow-up" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <p>Copyright © 2023 Julie Bourel - Drapier</p>
+      <p>Copyright © 2023 Julie Bourel-Drapier</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/a595cf5885.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "brand": "Web developper",
+        "areaServed": "Lesquin, métropole lilloise",
+        "name": "Julie Bourel-Drapier",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lesquin",
+          "addressRegion": "Haut-de-France",
+          "postalCode": "59810",
+          "addressCountry": "France"
+        },
+        "url": "https://julieboureldrapier.github.io/LastProject/",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "9:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+      </script>
   </body>
 </html>

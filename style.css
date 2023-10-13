@@ -572,7 +572,7 @@ p {
     padding: 10px;
     background: var(--fourth-color);
     color: var(--white); 
-    font-family: var(--main-police);
+    font-family: var(--hand-police);
     letter-spacing: 1px;
     border-radius: 20px;
   }
@@ -703,13 +703,13 @@ p {
 
 /*ARROWS NEXT TO FLIPCARDS*/
 .rotate-arrow {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1100px) {
     display: block;
     rotate: 90deg; 
   }
 }
 .unrotate-arrow {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1100px) {
     display: block;
   }
 }
