@@ -816,6 +816,14 @@ input[type=submit] {
 @media screen and (min-width: 800px) {
   .container {
   width: 100%;
-  max-width: 713px:
+  max-width: 713px;
+  border: solid 3px var(--main-color);
+  }	
 }
+
+@media screen and (min-width: 800px) {
+  .contact-h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+  }
 }
