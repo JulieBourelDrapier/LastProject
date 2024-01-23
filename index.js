@@ -30,7 +30,7 @@ const swiper = new Swiper('.swiper', {
 });
 // presentation animation
 var typed = new Typed(".text",{
-  strings: [" ", "développeuse front-end", "intégratrice web", "curieuse et consciencieuse", "Disponible de suite !"],
+  strings: [" ", "développeuse front-end", "intégratrice web", "curieuse et impliquée", "Disponible de suite !"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 1800,
