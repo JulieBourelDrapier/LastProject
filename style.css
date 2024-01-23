@@ -776,17 +776,11 @@ input[type=submit]:hover {
 }
 
 .container {
-  /* Ajouter box-sizing */
   box-sizing : border-box;
   border-radius:5px;
   background-color:var(--white);
   padding:20px;
   width: 100%;
-  /* redéfinition 400 + 2*20 */
   max-width: 440px;
   margin:0 auto;
-}
-h1  {
-  color:var(--third-color);
-  width: 100%;
 }
