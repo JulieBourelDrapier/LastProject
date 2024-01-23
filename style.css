@@ -311,7 +311,7 @@ p {
   align-items: center;
   margin: auto;
   width: 95%;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .retrospective {
   padding-top: 20px;
@@ -482,6 +482,7 @@ input[type=submit]:hover {
 }
 
 .container {
+  text-align: initial;
   box-sizing : border-box;
   border-radius:30px;
   background-color:var(--white);
