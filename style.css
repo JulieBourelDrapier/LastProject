@@ -490,12 +490,13 @@ input[type=submit]:hover {
   width: 90%;
   margin:0 auto;
   border: solid 2px var(--main-color);
+  margin-bottom: 50px;
 }
 /* CONTACT-ME SECTION */
 .contact-me {
   text-align: center;
   margin: auto;
-  padding: 40px;
+  padding: 6px;
 }
 .contact-me h2 {
   font-family: var(--hand-police);
