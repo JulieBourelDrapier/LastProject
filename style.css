@@ -745,4 +745,53 @@ p {
   }
 }
 
-
+/* formulaire de contact */
+#contact-form {
+	margin: auto;
+	background-color: var(--third-color); ;
+	position: relative;
+	padding-inline: 100px;
+	padding-block: 100px;
+}
+#contact-form .container {
+	display: flex;
+}
+.picture.right::before {
+	content: ' ';
+	background-color: var(--fourth-color);
+	width: 374px;
+	height: 329px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.form-container {
+	flex : 2;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	align-items: flex-start;
+}
+form input {
+	width: 100%;
+	background-color: transparent;
+	border: solid 1px;
+	height: 2.5em;
+	margin-bottom: 20px;
+}
+form textarea {
+	width: 100%;
+	background-color: transparent;
+	border: solid 1px;
+	height: 5em;
+	line-height: 2.5em;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	background-color: var(--fourth-color);
+	padding: .5em 1em
+}
