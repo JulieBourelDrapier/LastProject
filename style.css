@@ -451,6 +451,45 @@ font-size: 14px;
   color: var(--fourth-color);
 }
 
+/*CONTACT FORM */
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label{margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;}
+
+input[type=submit] {
+  background-color:var(--fourth-color);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:var(--main-color);
+}
+
+.container {
+  box-sizing : border-box;
+  border-radius:30px;
+  background-color:var(--white);
+  padding:20px;
+  width: 90%;
+  margin:0 auto;
+  border: solid 2px var(--main-color);
+}
 /* CONTACT-ME SECTION */
 .contact-me {
   text-align: center;
@@ -745,7 +784,7 @@ p {
 }
 
 /*contact form */
-input[type=text], textarea, input[type=email] {
+/* input[type=text], textarea, input[type=email] {
   width: 100%;
   padding: 12px;
   border: 1px solid var(--main-color);
@@ -756,8 +795,8 @@ input[type=text], textarea, input[type=email] {
   margin-right: 0px;
   margin-left: 0px;
   resize: vertical;
-}
-label{margin-right: 0px;
+} */
+/* label{margin-right: 0px;
   margin-left: 0px;
   width: 100%;}
 
@@ -768,19 +807,15 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
-input[type=submit]:hover {
+/* input[type=submit]:hover {
   background-color:var(--main-color);
-}
+} */
 
-.container {
-  box-sizing : border-box;
-  border-radius:30px;
-  background-color:var(--white);
-  padding:20px;
+@media screen and (min-width: 800px) {
+  .container {
   width: 100%;
-  max-width: 713px;
-  margin:0 auto;
-  border: solid 3px var(--main-color);
+  max-width: 713px:
+}
 }
