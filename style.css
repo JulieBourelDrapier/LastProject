@@ -206,7 +206,7 @@ p {
 .links:focus,
 .links:hover i, 
 .links:focus i {
-  color: var(--white); 
+  color: var(--fourth-color); 
 }
 .btn-div {
   display: none;
@@ -745,9 +745,3 @@ p {
   }
 }
 
-.talk-link:hover,
-.talk-link:focus {
-  @media screen and (min-width: 800px) {
-    color: var(--fourth-color);
-  }
-}
