@@ -479,7 +479,7 @@ font-size: 14px;
 .footer {
   background-color: var(--main-color);
   margin: auto;
-  padding-top: 35px;
+  padding: 30px 0 50px 0;
  }
  .footer p {
    font-family: var(--hand-police);
@@ -735,13 +735,13 @@ p {
 }
 .arrow-up i:hover,
 .arrow-up i:focus {
-  color: var(--fifth-color);
+  color: var(--fourth-color);
 }
 
 /* FOOTER */
  .footer p {
   @media screen and (min-width: 800px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
