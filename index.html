@@ -184,26 +184,31 @@
          
         </article> 
         <section id="contact" class="contact-me">
-        <h2>Vous souhaitez m'envoyer un message ?</h2>
+        <h2>Vous souhaitez travailler avec moi et me confier un projet ?</h2>
         <p>Partie en cours de production...</p>
-        <!-- <div class="container">
-        
-          <form action="" method="post">
-            <label for="name">Nom & prénom</label>
-            <input type="text" id="name" name="firstname" placeholder="Votre nom et prénom">
-        
-            <label for="sujet">Sujet</label>
-            <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message">
-        
-            <label for="emailAddress">Email</label>
-            <input id="emailAddress" type="email" name="email" placeholder="Votre adresse email">
-        
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-        
-            <input type="submit" value="Envoyer">
+        <section class="container">
+          <form action="mailto:j.boureldrapier@gmail.com" method="post">
+            <fieldset>
+              <legend>Vos coordonnées</legend>
+                <label for="prenom">Votre prénom</label>
+                <input type="text" id="prenom" name="prenom" autofocus>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom">
+                <label for="societe">Votre société</label>
+                <input type="text" id="societe" name="societe">
+                <label for="adressemail">Email</label>
+                <input id="adressemail" type="email" name="email">
+            </fieldset>
+            <fieldset>
+              <legend>Votre message</legend>
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required>
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Votre message" cols="40" rows="4"></textarea>
+              <input type="submit" value="Envoyer">
+          </fieldset>
           </form>
-        </div> -->
+        </section>
        
           <h3>Voir mon profil linkedIn ?</h3>
           <p><a href="https://www.linkedin.com/in/julie-bourel-drapier/">ici</a></p>
