@@ -288,10 +288,11 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .lang-list i {
-  font-size: 40px;
-  margin: 7px;
+  font-size: 30px;
+  margin: 4px;
 }
 
 /* PROJECTS */
@@ -483,12 +484,10 @@ input[type=submit]:hover {
 .container {
   text-align: initial;
   box-sizing : border-box;
-  border-radius:30px;
   background-color:var(--white);
   padding:20px;
   width: 90%;
   margin:0 auto;
-  border: solid 2px var(--main-color);
   margin-bottom: 50px;
 }
 /* CONTACT-ME SECTION */
@@ -683,7 +682,7 @@ p {
 }
 .lang-list i {
   @media screen and (min-width: 800px) {
-    font-size: 37px;
+    font-size: 48px;
   }
 }
 
