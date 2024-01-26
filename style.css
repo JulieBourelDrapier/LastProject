@@ -366,6 +366,7 @@ p {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 .flip-card {
   background-color: transparent;
@@ -373,7 +374,6 @@ p {
   height: 400px;
   perspective: 1000px;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 .flip-card-inner {
   position: relative;
@@ -439,12 +439,7 @@ p {
 .github i {
 font-size: 14px;
 }
-.rotate-arrow {
-  display: none;
-}
-.unrotate-arrow {
-  display: none;
-}
+
 .github-link{
   font-size: 20px;
 }
@@ -464,13 +459,12 @@ font-size: 14px;
   font-family: var(--hand-police);
   font-size: 16px;
 }
+
 .contact-info li {
   font-family: var(--light-police);
   font-size: 10px;
 }
-/* .contact-info a {
-  font-size: 18px;
-} */
+
 .contact-me a {
   font-weight: bold;
 }
@@ -488,9 +482,8 @@ font-size: 14px;
 .footer {
   background-color: var(--main-color);
   margin: auto;
-  padding: 30px 0;
+  padding: 50px 0;
   margin-top: 20px;
-  margin-bottom: 15px;
  }
  .footer p {
    font-family: var(--hand-police);
