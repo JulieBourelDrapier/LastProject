@@ -471,8 +471,8 @@ font-size: 14px;
 .footer {
   background-color: var(--main-color);
   margin: auto;
-  padding: 50px 0;
-  margin-top: 20px;
+  padding: 30px 0;
+  margin-top: 30px;
  }
  .footer p {
    font-family: var(--hand-police);
@@ -703,6 +703,11 @@ p {
 }
 
 /* FOOTER */
+.footer {
+  @media screen and (min-width: 800px) {
+    padding: 100px 0;
+    margin-top: 100px;
+  }}
  .footer p {
   @media screen and (min-width: 800px) {
     font-size: 18px;
