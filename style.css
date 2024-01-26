@@ -451,7 +451,7 @@ font-size: 14px;
 .contact-me {
   text-align: center;
   margin: auto;
-  padding: 6px;
+  padding: 20px;
 }
 
 .contact-me h2 {
@@ -696,6 +696,11 @@ p {
 
 
 /* CONTACT-ME SECTION */
+.contact-me {
+  @media screen and (min-width: 800px) {
+    padding: 100px;
+  }
+}
 .contact-me h2 {
   @media screen and (min-width: 800px) {
     font-size: 28px;
@@ -705,8 +710,8 @@ p {
 /* FOOTER */
 .footer {
   @media screen and (min-width: 800px) {
-    padding: 100px 0;
-    margin-top: 100px;
+    padding: 40px 0;
+    margin-top: 60px;
   }}
  .footer p {
   @media screen and (min-width: 800px) {
