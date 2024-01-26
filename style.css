@@ -206,7 +206,7 @@ p {
 .links:focus,
 .links:hover i, 
 .links:focus i {
-  color: var(--fourth-color); 
+  color: var(--white); 
 }
 .btn-div {
   display: none;
