@@ -490,6 +490,7 @@ font-size: 14px;
   margin: auto;
   padding: 30px 0;
   margin-top: 20px;
+  margin-bottom: 10px;
  }
  .footer p {
    font-family: var(--hand-police);
@@ -714,28 +715,10 @@ p {
   }
 }
 
-/*ARROWS NEXT TO FLIPCARDS*/
-/* .rotate-arrow {
-  @media screen and (min-width: 1100px) {
-    display: block;
-    rotate: 90deg; 
-  }
-}
-.unrotate-arrow {
-  @media screen and (min-width: 1100px) {
-    display: block;
-  }
-} */
-
 /* CONTACT-ME SECTION */
 .contact-me h2 {
   @media screen and (min-width: 800px) {
     font-size: 28px;
-  }
-}
-.contact-info {
-  @media screen and (min-width: 800px) {
-    font-size: 20px;
   }
 }
 .arrow-up i {
@@ -746,12 +729,15 @@ p {
     color: var(--main-color);
   }
 }
-.arrow-up i:hover,
-.arrow-up i:focus {
+.arrow-up a:hover,
+.arrow-up a:focus {
   color: var(--fourth-color);
 }
 
 /* FOOTER */
+.footer {
+  margin-bottom: 30px;
+}
  .footer p {
   @media screen and (min-width: 800px) {
     font-size: 18px;
