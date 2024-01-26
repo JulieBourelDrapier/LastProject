@@ -716,7 +716,7 @@ p {
     font-size: 20px;
   }
 }
-.arrow-up i {
+.arrow-up {
   @media screen and (min-width: 800px) {
     display: block;
     font-size: 36px;
@@ -724,8 +724,8 @@ p {
     color: var(--main-color);
   }
 }
-.arrow-up i:hover,
-.arrow-up i:focus {
+.arrow-up:hover,
+.arrow-up:focus {
   color: var(--fourth-color);
 }
 
