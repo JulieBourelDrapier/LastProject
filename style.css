@@ -699,14 +699,6 @@ p {
 }
 
 /* FLIPCARDS */
-.flip-card {
-  background-color: transparent;
-  min-width: 340px;
-  height: 400px;
-  perspective: 1000px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
 .cards{
   @media screen and (min-width: 800px) {
     flex-direction: row;
@@ -739,9 +731,6 @@ p {
 }
 
 /* FOOTER */
-.footer {
-  padding-bottom: 30px;
-}
  .footer p {
   @media screen and (min-width: 800px) {
     font-size: 18px;
