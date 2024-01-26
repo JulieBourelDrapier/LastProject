@@ -740,7 +740,7 @@ p {
 
 /* FOOTER */
 .footer {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
  .footer p {
   @media screen and (min-width: 800px) {
