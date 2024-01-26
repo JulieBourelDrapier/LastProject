@@ -373,6 +373,7 @@ p {
   height: 400px;
   perspective: 1000px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .flip-card-inner {
   position: relative;
@@ -458,6 +459,7 @@ font-size: 14px;
   margin: auto;
   padding: 6px;
 }
+
 .contact-me h2 {
   font-family: var(--hand-police);
   font-size: 16px;
@@ -466,8 +468,15 @@ font-size: 14px;
   font-family: var(--light-police);
   font-size: 10px;
 }
-.contact-info a {
+/* .contact-info a {
   font-size: 18px;
+} */
+.contact-me a {
+  font-weight: bold;
+}
+.contact-me a:hover,
+.contact-me a:focus {
+  color: var(--fourth-color);
 }
 
 /*ARROW YO MOVE BACK UP*/
