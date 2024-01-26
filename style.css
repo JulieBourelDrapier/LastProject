@@ -366,7 +366,6 @@ p {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 30px;
 }
 .flip-card {
   background-color: transparent;
