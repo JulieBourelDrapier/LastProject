@@ -705,6 +705,9 @@ p {
 }
 
 /* FLIPCARDS */
+.flip-card {
+  margin-bottom: 90px;
+}
 .cards{
   @media screen and (min-width: 800px) {
     flex-direction: row;
@@ -712,7 +715,7 @@ p {
 }
 
 /*ARROWS NEXT TO FLIPCARDS*/
-.rotate-arrow {
+/* .rotate-arrow {
   @media screen and (min-width: 1100px) {
     display: block;
     rotate: 90deg; 
@@ -722,7 +725,7 @@ p {
   @media screen and (min-width: 1100px) {
     display: block;
   }
-}
+} */
 
 /* CONTACT-ME SECTION */
 .contact-me h2 {
