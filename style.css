@@ -427,7 +427,7 @@ p {
   object-fit: contain;
 }
 .suggestion {
-  font-size: 10px;
+  font-size: 7px;
   color: var(--second-color);
   font-weight: bold;
 }
