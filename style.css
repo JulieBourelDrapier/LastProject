@@ -426,6 +426,13 @@ p {
   padding: 12px;
   object-fit: contain;
 }
+.flip-card-front i {
+  font-size: 20px;
+  color: var(--second-color);
+  @media screen and (min-width: 800px) {
+    font-size: 30px;
+  }
+}
 
 /* ARROWS & LINKS*/
 .github {
