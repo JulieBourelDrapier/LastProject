@@ -413,7 +413,6 @@ p {
 }
 .flip-card-back p,
 .flip-card-front p {
-  font-family: var(--hand-police);
   text-align: center;
   letter-spacing: 2px;
   font-size: 18px;
