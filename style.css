@@ -427,10 +427,10 @@ p {
   object-fit: contain;
 }
 .flip-card-front i {
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   @media screen and (min-width: 800px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
