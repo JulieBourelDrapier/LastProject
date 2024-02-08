@@ -428,7 +428,7 @@ p {
 }
 .suggestion {
   color: var(--second-color);
-  font-size: 12px;
+  font-size: 50px;
   font-weight: bold;
 }
 
