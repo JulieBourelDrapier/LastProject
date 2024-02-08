@@ -426,6 +426,11 @@ p {
   padding: 12px;
   object-fit: contain;
 }
+.suggestion {
+  font-size: 10px;
+  color: var(--second-color);
+  font-weight: bold;
+}
 
 /* ARROWS & LINKS*/
 .github {
