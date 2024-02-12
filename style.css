@@ -1,11 +1,20 @@
 /* Variables CSS*/
 :root {
-  --main-color: #156062;
+  /* --main-color: #156062;
   --second-color: #22de22;
   --third-color: #f8de65;
   --fourth-color: #00c092;
   --fifth-color: #ffbbab;
   --sixth-color: #fb8960;
+  --white: #fff;
+  --black: #000; */
+
+  --main-color: #390099;
+  --second-color: #22de22;
+  --third-color: #ffbd00;
+  --fourth-color: #00c092;
+  --fifth-color: #9e0059;
+  --sixth-color: #ff0054;
   --white: #fff;
   --black: #000;
 
