@@ -450,6 +450,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: #fff;
 }
 .github p, 
 .github i {
