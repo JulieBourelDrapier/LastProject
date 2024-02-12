@@ -317,14 +317,12 @@ p {
   text-align: center;
 }
 .explanations {
-  background-color: #fff;
-  margin: 10%;
+  color: #fff;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: auto;
-  width: 95%;
-  padding: 40px 0; */
+  padding: 40px; 
 }
 .retrospective {
   padding-top: 20px;
