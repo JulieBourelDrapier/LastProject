@@ -146,7 +146,7 @@ p {
 .about-text a:hover,
 .navbar a:focus,
 .about-text a:focus {
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 /* HOME */
@@ -462,7 +462,7 @@ font-size: 14px;
 }
 .github-link:hover,
 .github-link:focus {
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 /* CONTACT-ME SECTION */
