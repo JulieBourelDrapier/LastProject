@@ -590,8 +590,8 @@ p {
   @media screen and (min-width: 800px) {
     display: block;
     background: var(--main-color);
-    color: #fff; 
-    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 0 30px var(--main-color);
   }
 }
 
