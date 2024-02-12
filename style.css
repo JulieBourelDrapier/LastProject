@@ -593,8 +593,9 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--fifth-color);
-    color: var(--black);  
+    background: var(--third-color);
+    color: var(--black); 
+    font-weight: bold; 
   }
 }
 
