@@ -540,11 +540,11 @@ p {
 } 
 
 /* HOME */
-.home {
+/* .home {
   @media screen and (min-width: 800px) {
     padding: 180px 10% 10%; 
   }
-}
+} */
 .home-content h1 {
   @media screen and (min-width: 800px) {
     font-size: 36px;
