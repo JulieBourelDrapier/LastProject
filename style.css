@@ -151,6 +151,7 @@ p {
 
 /* HOME */
 .home {
+  background-color: #fff;
   position: relative;
   width: 100%;
   justify-content: space-between;
@@ -224,6 +225,7 @@ p {
 
 /* ABOUT-ME SECTION */
 .about-me {
+  background-color: #fff;
   width: 95%;
   margin: auto;
   display: block;
@@ -316,6 +318,7 @@ p {
   text-align: center;
 }
 .explanations {
+  background-color: #fff;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
@@ -466,6 +469,7 @@ font-size: 14px;
 
 /* CONTACT-ME SECTION */
 .contact-me {
+  background-color: #fff;
   text-align: center;
   margin: auto;
   padding: 20px;
