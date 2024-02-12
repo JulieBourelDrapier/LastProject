@@ -225,7 +225,6 @@ p {
 
 /* ABOUT-ME SECTION */
 .about-me {
-  background-color: #fff;
   width: 95%;
   margin: auto;
   display: block;
@@ -318,7 +317,6 @@ p {
   text-align: center;
 }
 .explanations {
-  background-color: #fff;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
@@ -328,6 +326,7 @@ p {
   padding: 40px 0;
 }
 .retrospective {
+  background-color: #fff;
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
@@ -469,7 +468,6 @@ font-size: 14px;
 
 /* CONTACT-ME SECTION */
 .contact-me {
-  background-color: #fff;
   text-align: center;
   margin: auto;
   padding: 20px;
@@ -496,11 +494,11 @@ font-size: 14px;
   margin-top: 30px;
  }
  .footer p {
-   font-family: var(--hand-police);
+   font-family: var(--light-police);
    padding-bottom: 20px;
    text-align: center;
    font-size: 10px;
-   color: var(--white);
+   color: #fff;
 }
 
 /********************** @ MEDIA QUERIES **********************/
