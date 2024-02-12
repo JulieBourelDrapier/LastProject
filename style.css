@@ -208,7 +208,9 @@ p {
   animation-delay: calc (.8s * var(--1));    
 }
 .home-content li:hover,
-.home-content li:focus {
+.home content a:hover,
+.home-content li:focus,
+.home-content a:focus {
   background: var(--second-color);
   box-shadow: 0 0 30px var(--second-color);
   border: none;
@@ -579,14 +581,14 @@ p {
     font-size: 13px;
     display: inline-block;
     padding: 10px;
-    background: var(--second-color);
+    /* background: var(--second-color);
     color: var(--white); 
-    font-family: var(--hand-police);
+    font-family: var(--hand-police); */
     letter-spacing: 1px;
     border-radius: 20px;
   }
 }
-.project-btn:hover,
+/* .project-btn:hover,
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
@@ -594,7 +596,7 @@ p {
     color: var(--black); 
     font-weight: bold; 
   }
-}
+} */
 
 /* ABOUT-ME SECTION */
 .about-me {
