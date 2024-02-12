@@ -3,18 +3,17 @@
   /* --main-color: #156062;
   --second-color: #22de22;
   --third-color: #f8de65;
-  --fourth-color: #00c092;
-  --fifth-color: #ffbbab;
-  --sixth-color: #fb8960;
+  --third-color: #00c092;
+  --fourth-color: #ffbbab;
+  --fifth-color: #fb8960;
   --white: #fff;
   --black: #000; */
 
-  --main-color: #390099;
-  --second-color: #22de22;
-  --third-color: #ffbd00;
-  --fourth-color: #00c092;
-  --fifth-color: #9e0059;
-  --sixth-color: #ff0054;
+  --main-color: #023e8a;
+  --second-color: #f8de65;
+  --third-color: #ff5400;
+  --fourth-color: #00b4d8;
+  --fifth-color: #ff9e00;
   --white: #fff;
   --black: #000;
 
@@ -122,7 +121,7 @@ p {
 .logo {
   position: relative;
   font-size: 36px;
-  color: var(--third-color);
+  color: var(--second-color);
   letter-spacing: 8px;
   text-decoration: none;
   cursor: default;
@@ -145,7 +144,7 @@ p {
 .about-text a:hover,
 .navbar a:focus,
 .about-text a:focus {
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 
 /* HOME */
@@ -183,7 +182,7 @@ p {
   animation-delay: .9s;
 }
 .home-content h2 span {
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 .home-content p {
   opacity: 0;
@@ -207,8 +206,8 @@ p {
 }
 .home-content li:hover,
 .home-content li:focus {
-  background: var(--fourth-color);
-  box-shadow: 0 0 30px var(--fourth-color);
+  background: var(--third-color);
+  box-shadow: 0 0 30px var(--third-color);
   border: none;
 }
 .links:hover,
@@ -233,7 +232,7 @@ p {
   text-align: center;
 }
 .about-span {
-  color: var(--third-color);
+  color: var(--second-color);
   font-family: var(--hand-police);
 }
 .about-img img {
@@ -248,7 +247,7 @@ p {
   text-align: center;
   font-family: var(--hand-police);
   font-size: 15px;
-  color: var(--fifth-color);
+  color: var(--fourth-color);
   letter-spacing: 4px;
   font-style: italic;
   padding-top: 10px;
@@ -266,7 +265,7 @@ p {
   bottom: 8px;
   width: 100%;
   height: 2px;
-  background-color: var(--fifth-color);
+  background-color: var(--fourth-color);
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
 }
@@ -344,7 +343,7 @@ p {
 }
 .retrospective a:hover, 
 .retrospective a:focus {
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 
 /*SLIDER*/
@@ -359,13 +358,13 @@ p {
   object-fit: contain;
 }
 .swiper-button-next, .swiper-button-prev {
-  color: var(--fifth-color);
+  color: var(--fourth-color);
 }
 .swiper-pagination-bullet-active {
-  background-color: var(--fifth-color);
+  background-color: var(--fourth-color);
 }
 .swiper-scrollbar-drag {
-  background-color: var(--fifth-color);
+  background-color: var(--fourth-color);
 }
 
 /*FLIP-CARDS*/
@@ -460,7 +459,7 @@ font-size: 14px;
 }
 .github-link:hover,
 .github-link:focus {
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 
 /* CONTACT-ME SECTION */
@@ -480,7 +479,7 @@ font-size: 14px;
 }
 .me:hover,
 .me:focus {
-  color: var(--fourth-color);
+  color: var(--third-color);
 }
 
 /*FOOTER*/ 
@@ -579,7 +578,8 @@ p {
     font-size: 13px;
     display: inline-block;
     padding: 10px;
-    background: var(--fourth-color);
+    background: var(--third-color
+);
     color: var(--white); 
     font-family: var(--hand-police);
     letter-spacing: 1px;
@@ -590,7 +590,7 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--fifth-color);
+    background: var(--fourth-colorr);
     color: var(--white);  
   }
 }
