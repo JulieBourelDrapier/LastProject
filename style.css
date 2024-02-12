@@ -9,9 +9,9 @@
   --white: #fff;
   --black: #000; */
 
-  --main-color: #023e8a;
-  --second-color: #f8de65;
-  --third-color: #ff5400;
+  --main-color: #ff5400;
+  --second-color: #023e8a;
+  --third-color: #f8de65;
   --fourth-color: #00b4d8;
   --fifth-color: #ff9e00;
   --white: #fff;
@@ -590,7 +590,7 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--fourth-colorr);
+    background: var(--fourth-color);
     color: var(--white);  
   }
 }
