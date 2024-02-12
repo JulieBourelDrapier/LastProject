@@ -317,16 +317,16 @@ p {
   text-align: center;
 }
 .explanations {
-  margin-top: 10%;
+  background-color: #fff;
+  margin: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  /* margin: auto;
   width: 95%;
-  padding: 40px 0;
+  padding: 40px 0; */
 }
 .retrospective {
-  background-color: #fff;
   padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
