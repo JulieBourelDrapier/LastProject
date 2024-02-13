@@ -146,7 +146,7 @@ p {
 .about-text a:hover,
 .navbar a:focus,
 .about-text a:focus {
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 /* HOME */
