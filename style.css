@@ -591,7 +591,7 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--second-color);
+    background: var(--fourth-color);
     color: #fff;
     box-shadow: 0 0 30px var(--fourth-color);
   }
