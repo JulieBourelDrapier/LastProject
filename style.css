@@ -483,7 +483,7 @@ font-size: 14px;
 }
 .me:hover,
 .me:focus {
-  color: var(--second-color);
+  color: var(--fourth-color);
 }
 
 /*FOOTER*/ 
@@ -591,9 +591,9 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--main-color);
+    background: var(--second-color);
     color: #fff;
-    box-shadow: 0 0 30px var(--main-color);
+    box-shadow: 0 0 30px var(--fourth-color);
   }
 }
 
