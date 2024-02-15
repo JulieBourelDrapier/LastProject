@@ -1,21 +1,20 @@
 /* Variables CSS*/
 :root {
-  /* --main-color: #156062;
-  --second-color: #22de22;
-  --third-color: #f8de65;
-  --third-color: #00c092;
-  --fourth-color: #ffbbab;
+  --main-color: #156062;
+  --second-color: #00c092;
+  --third-color: #ffbbab;
+  --fourth-color: #f8de65;
   --fifth-color: #fb8960;
   --white: #fff;
-  --black: #000; */
+  --black: #000;
 
-  --main-color: #156062;
+  /* --main-color: #156062;
   --second-color: #023e8a;
   --third-color: #00a6a6;
   --fourth-color: #efca08;
   --fifth-color: #ff5400;
   --white: #edede9;
-  --black: #293241;
+  --black: #293241; */
 
 
   --main-police: 'righteous', sans-serif;
@@ -123,7 +122,7 @@ p {
 .logo {
   position: relative;
   font-size: 36px;
-  color: var(--second-color);
+  color: var(--fourth-color);
   letter-spacing: 8px;
   text-decoration: none;
   cursor: default;
