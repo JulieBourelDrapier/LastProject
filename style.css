@@ -136,7 +136,7 @@ p {
 .about-text a:hover,
 .navbar a:focus,
 .about-text a:focus {
-  color: var(--fourth-color);
+  color: var(--fifth-color);
 }
 
 /* HOME */
@@ -473,7 +473,7 @@ font-size: 14px;
 }
 .me:hover,
 .me:focus {
-  color: var(--fourth-color);
+  color: var(--fifth-color);
 }
 
 /*FOOTER*/ 
@@ -581,9 +581,9 @@ p {
 .project-btn:focus {
   @media screen and (min-width: 800px) {
     display: block;
-    background: var(--fourth-color);
+    background: var(--fifth-color);
     color: #fff;
-    box-shadow: 0 0 30px var(--fourth-color);
+    box-shadow: 0 0 30px var(--fifth-color);
   }
 }
 
