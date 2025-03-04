@@ -310,7 +310,7 @@ p {
   border-radius: 7px;
 }
 .home-content {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 1px;
 }
 .home-content h1 {
