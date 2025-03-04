@@ -380,6 +380,7 @@ p {
   display: block;
   padding: 20px 0;
   padding-bottom: 40px;
+  padding: 20px 10% 30px;
 }
 /* .about-me::before{
   position: absolute;
@@ -473,6 +474,7 @@ p {
   flex-direction: column;
   margin: auto;
   width: 100%;
+  padding: 20px 10% 30px;
 }
 .projects-section h2 {
   text-align: center;
