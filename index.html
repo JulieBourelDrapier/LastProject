@@ -19,50 +19,46 @@
 	<meta property="og:url" content="https://julieboureldrapier.github.io/Portfolio/">
 	<meta property="og:description" content="Julie Bourel-Drapier, intégratrice web - développeuse front-end junior en métropole lilloise">
 </head>
-<nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" id="menuCheckbox" />
-    
-    <span></span>
-    <span></span>
-    <span></span>
-  
-    <ul id="menu">
-    
-      <li>
-        <a href="#">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Accueil</label>
-        </a>
-      </li>
-      <li>
-        <a href="#about">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">À propos</label>
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Compétences clés</label>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Contact</label>
-        </a>
-      </li>
-      
-      <!-- These just close the menu -->
-      <!-- <li><label for="menuCheckbox"><a>Info</a></label></li>
-      <li><label for="menuCheckbox"><a>Contact</a></label></li> 
-      <li><a href="" target="_blank">Show me more</a> </li>-->
-    
-    </ul>
-  </div>
-</nav>
-<main>
+
+<body>
+  <main>
+    <section class="home">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+        
+          <ul id="menu">
+          
+            <li>
+              <a href="#">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Accueil</label>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">À propos</label>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Compétences clés</label>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Contact</label>
+              </a>
+            </li>
+            
+          
+          </ul>
+        </div>
+      </nav>
+    </section>
   <section class="home">
     <div class="home-content">
       <h1>Bienvenue sur mon <br>portfolio &nbsp!</h1>
@@ -78,6 +74,7 @@
       </div>
     </div>
   </section>
+
   <div class="delayed-display">
     <section id="about" class="about-me">
       <h2 class="about-title">À propos de <span class="about-span">moi</span></h2>
@@ -197,7 +194,7 @@
         </div>
     </article>
 
-    <!-- <article class="explanations">  
+    <article class="explanations">  
       <div class="retrospective">
         <h2>Rerour sur certains projets</h2>
         <div class="cards">
@@ -243,7 +240,7 @@
           </div>
         </div>
       </div>
-    </article> -->
+    </article>
 
     <section id="contact" class="contact-me">
       <h2>Vous souhaitez me contacter ?</h2>
@@ -251,6 +248,7 @@
     </section>
 
   </div>
+
 </main>
 <footer class="footer">
   <p>Copyright© 2025 Julie Bourel-Drapier</p>
