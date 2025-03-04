@@ -23,7 +23,8 @@
  } */
  
 main {
-  width: calc(100% - 240px);
+  /* width: calc(100% - 240px); */
+  width: calc(100% - 89px);
   max-width: 680px;
   margin: 100px auto;
 }
