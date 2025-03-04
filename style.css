@@ -12,6 +12,154 @@
   --hand-police: 'rock salt', sans-serif;
   --light-police: 'gruppo', sans-serif;
 }
+
+/* MENU BURGER */
+/* body {
+   margin: 0;
+   padding: 0;
+   background: var(--main-color);
+   color: var(--second-color);
+   font-family: var(--light-police)
+ } */
+ 
+main {
+  width: calc(100% - 240px);
+  max-width: 680px;
+  margin: 100px auto;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+ 
+/* Menu code starts here */
+
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 12;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: var(--second-color)
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+/*
+* Just a quick hamburger
+*/
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu {
+  position: absolute;
+  max-width: 240px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: var(--main-color);
+  color: var(--white);
+  border-radius: 0 0 20px 0;
+  list-style-type: none;  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu a {
+  color: var(--white);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label {
+  cursor: pointer;
+}
+
+/*
+* And let's slide it in from the left
+*/
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+/* LAST PORTFOLIO  */
 /* KEYFRAMES */
 @keyframes slideRight {
   0%{
@@ -70,8 +218,17 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+ol {
+  margin-bottom: 1.4rem;
+}
 li {
   list-style: none;
+  font-family: var(--light-police);
+  font-size: 20px;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  color: var(--main-color);
+  font-weight: 700;
 }
 strong {
   font-family: 'gruppo', 'inclusive sans', sans-serif;
@@ -176,12 +333,13 @@ p {
   animation-delay: .9s;
 }
 .home-content h2 span {
-  color: var(--second-color);
+  color: var(--fifth-color);
 }
 .home-content p {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: .7s; 
+  margin-top: 1rem;
 }
 .home-content li {
   display: inline-flex;
@@ -216,12 +374,24 @@ p {
 
 /* ABOUT-ME SECTION */
 .about-me {
-  width: 95%;
+  /* position: relative; */
+  width: 100%;
   margin: auto;
   display: block;
   padding: 20px 0;
   padding-bottom: 40px;
 }
+/* .about-me::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background: url(assets/presentation-01.jpg);
+  opacity: .1;
+  z-index: -1;
+} */
 .about-title {
   text-align: center;
 }
@@ -242,7 +412,7 @@ p {
   font-family: var(--hand-police);
   font-size: 15px;
   color: var(--second-color);
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-style: italic;
   padding-top: 10px;
   rotate: -5deg;
@@ -474,6 +644,7 @@ font-size: 14px;
 .me:hover,
 .me:focus {
   color: var(--fifth-color);
+  transition: all .3s ease-in;
 }
 
 /*FOOTER*/ 
@@ -539,7 +710,7 @@ p {
 } */
 .home-content h1 {
   @media screen and (min-width: 800px) {
-    font-size: 36px;
+    font-size: 38px;
   }
 }
 .home-content li {
@@ -575,6 +746,7 @@ p {
     color: #fff; 
     letter-spacing: 2px;
     border-radius: 22px;
+    transition: all 0.3s ease;	
   }
 }
 .project-btn:hover,
@@ -584,17 +756,18 @@ p {
     background: var(--fifth-color);
     color: #fff;
     box-shadow: 0 0 30px var(--fifth-color);
+    transition: all 0.3s ease-in-out;  
   }
 }
 
 /* ABOUT-ME SECTION */
 .about-me {
   @media screen and (min-width: 800px) {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     margin-top: 40px;
   }
@@ -693,11 +866,16 @@ p {
   }
 }
 .swiper-slide img {
-  @media screen and (min-width: 1100px) {
-    width: 1100px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 1100px) {
+    .swiper-slide img {
+      width: 1100px;
   }
-  @media screen and (min-width: 800px) {
-    height: 500px;
+}
+@media screen and (min-width: 800px) {
+  .swiper-slide img {
+    height: 440px;
   }
 }
 
