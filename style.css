@@ -211,7 +211,7 @@ main {
   box-sizing: border-box;
   font-family: var(--main-police); 
 }
-#menuCheckbox {
+#menuCheckbox span {
   margin: 0;
 }
 body {
