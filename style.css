@@ -74,6 +74,7 @@ main {
   display: block;
   width: 33px;
   height: 4px;
+  margin-top: -0.1rem;
   margin-bottom: 5px;
   position: relative;
   background: #cdcdcd;
